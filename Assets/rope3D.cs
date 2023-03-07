@@ -40,6 +40,7 @@ public class rope3D : MonoBehaviour
                 top = hj;
                 newSeg.gameObject.tag = gameObject.tag;
             }
+            StartCoroutine(RedoBody(newSeg));
             prevBod = newSeg.GetComponent<Rigidbody>();
         }
     }
@@ -54,6 +55,10 @@ public class rope3D : MonoBehaviour
         top.connectedBody = newSeg.GetComponent<Rigidbody>();
         top.GetComponent<ropeScript>().ResetAnchor();
         top = hj;
-
+    }
+    IEnumerator RedoBody(GameObject seg)
+    {
+        yield return new WaitForSeconds(3.0f);
+        seg.GetComponent<BoxCollider>().isTrigger = false;
     }
 }
