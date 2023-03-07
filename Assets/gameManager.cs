@@ -12,7 +12,7 @@ public class gameManager : MonoBehaviour
     public GameObject[] stringArray;
     public GameObject greenB, redB, blueB;
     public GameObject[] bArray;
-    int extLength = 30;
+    int extLength = 15;
     public GameObject gReturn, bReturn, rReturn;
     public GameObject[] returnArray;
     public static float went;
@@ -44,13 +44,18 @@ public class gameManager : MonoBehaviour
             recentCamera = false;
             for (int i = 0; i < stringArray.Length; i++)
             {
-                stringArray[i].transform.position = new Vector3(stringArray[i].transform.position.x, 1f, stringArray[i].transform.position.z);
+                GameObject.Find("rHook").transform.position = rReturn.transform.position;
+                GameObject.Find("bHook").transform.position = bReturn.transform.position;
+                GameObject.Find("gHook").transform.position = gReturn.transform.position;
+
                 stringArray[i].GetComponent<HitScript>().isStringHit = false;
                 for (int j = 0; j < extLength; j++)
                 {
                     stringArray[i].GetComponent<rope>().addSeg();
                 }
             }
+
+
             redB.transform.position = GameObject.Find("rHook").transform.position;
             greenB.transform.position = GameObject.Find("gHook").transform.position;
             blueB.transform.position = GameObject.Find("bHook").transform.position;
