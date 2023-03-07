@@ -157,6 +157,7 @@ MonoBehaviour:
   prefabRopeSegments:
   - {fileID: 5908669998152567633, guid: 5b5ef973fc040a44abb2d7a7445c4e60, type: 3}
   linkNum: 30
+  top: {fileID: 0}
 --- !u!4 &13268828
 Transform:
   m_ObjectHideFlags: 0
@@ -164,13 +165,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13268826}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.94, y: -5.5, z: -1.08}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.94, y: -8.9, z: 358.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 40398043}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 413088083}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &13268829
 MonoBehaviour:
@@ -244,8 +245,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ddd19ea0b0b8dc74fb65da8931c3740c, type: 2}
+  m_sharedMaterial: {fileID: 7852177615066287451, guid: ddd19ea0b0b8dc74fb65da8931c3740c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -331,7 +332,7 @@ GameObject:
   - component: {fileID: 40398041}
   - component: {fileID: 40398042}
   m_Layer: 0
-  m_Name: Hook
+  m_Name: rHook
   m_TagString: HookRed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -373,7 +374,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 7.94, y: -5.5}
+  m_ConnectedAnchor: {x: 7.94, y: -5.4999995}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -408,7 +409,7 @@ GameObject:
   - component: {fileID: 148710425}
   - component: {fileID: 148710426}
   m_Layer: 0
-  m_Name: Hook
+  m_Name: bHook
   m_TagString: HookBlue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -450,7 +451,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -1.25, y: -5.5}
+  m_ConnectedAnchor: {x: -1.8999939, y: -5.4999995}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -507,6 +508,7 @@ MonoBehaviour:
   prefabRopeSegments:
   - {fileID: 344735133420621637, guid: 0d11f51bedb9048458997ede3795e142, type: 3}
   linkNum: 30
+  top: {fileID: 0}
 --- !u!4 &189772352
 Transform:
   m_ObjectHideFlags: 0
@@ -514,13 +516,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189772350}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.25, y: -5.5, z: -1.08}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.8999939, y: -8.9, z: 358.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 148710427}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 413088083}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &189772353
 MonoBehaviour:
@@ -628,7 +630,7 @@ RectTransform:
   m_Children:
   - {fileID: 26927189}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -718,6 +720,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1716038729}
+  - {fileID: 189772352}
+  - {fileID: 13268828}
+  - {fileID: 1809723523}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -861,7 +866,7 @@ RectTransform:
   - {fileID: 1570019037}
   - {fileID: 1503462388}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -962,7 +967,7 @@ GameObject:
   - component: {fileID: 834721298}
   - component: {fileID: 834721299}
   m_Layer: 0
-  m_Name: Hook
+  m_Name: gHook
   m_TagString: HookGreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1004,7 +1009,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -12.1, y: -5.5}
+  m_ConnectedAnchor: {x: -12.1, y: -5.4999995}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1183,7 +1188,7 @@ GameObject:
   - component: {fileID: 1311492676}
   - component: {fileID: 1311492675}
   m_Layer: 5
-  m_Name: Button
+  m_Name: blueB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1205,7 +1210,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -268.25, y: -155.5}
+  m_AnchoredPosition: {x: -268.9, y: -155.5}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1311492672
@@ -1412,7 +1417,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1442151622
 GameObject:
@@ -1443,6 +1448,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b20408c30ee3441bf6ed59f1218fde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  green: {fileID: 1809723521}
+  blue: {fileID: 189772350}
+  red: {fileID: 13268826}
+  stringArray: []
+  greenB: {fileID: 1503462387}
+  redB: {fileID: 1570019036}
+  blueB: {fileID: 1311492670}
+  bArray: []
   stats: {fileID: 26927188}
   cam: {fileID: 413088080}
 --- !u!4 &1442151624
@@ -1457,7 +1470,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1503462387
 GameObject:
@@ -1474,7 +1487,7 @@ GameObject:
   - component: {fileID: 1503462390}
   - component: {fileID: 1503462389}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: greenB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1654,7 +1667,7 @@ GameObject:
   - component: {fileID: 1570019039}
   - component: {fileID: 1570019038}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: redB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1910,6 +1923,7 @@ MonoBehaviour:
   prefabRopeSegments:
   - {fileID: 1274322418881208650, guid: b6ea96beb39507b418da8448af5eae02, type: 3}
   linkNum: 30
+  top: {fileID: 0}
 --- !u!4 &1809723523
 Transform:
   m_ObjectHideFlags: 0
@@ -1917,13 +1931,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809723521}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.1, y: -5.5, z: -1.08}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.1, y: -8.9, z: 358.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 834721300}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 413088083}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1809723524
 MonoBehaviour:

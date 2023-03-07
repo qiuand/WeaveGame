@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class camControl : MonoBehaviour
 {
-    float inDistance = 5f;
+    public static float inDistance = 25f;
     float camTimer;
-    float camDuration = 1f;
+    float camDuration = 2f;
     Camera cam;
     Vector3 originalPos;
     // Start is called before the first frame update
@@ -31,5 +31,6 @@ public class camControl : MonoBehaviour
         }
         originalPos = cam.transform.position;
         camTimer = 0;
+        gameManager.isCamDone = true;
     }
 }
