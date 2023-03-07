@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square (2) Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 344735133420621637, guid: 0d11f51bedb9048458997ede3795e142, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 762785217643447034, guid: 0d11f51bedb9048458997ede3795e142, type: 3}
       propertyPath: m_RootOrder
       value: 0

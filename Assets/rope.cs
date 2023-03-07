@@ -29,6 +29,10 @@ public class rope : MonoBehaviour
         for (int i=0; i< linkNum; i++)
         {
             GameObject newSeg = Instantiate(prefabRopeSegments[0]);
+            if (i<10)
+            {
+                newSeg.gameObject.tag = gameObject.tag;
+            }
             newSeg.transform.parent = transform;
             newSeg.transform.position = transform.position;
             HingeJoint2D hj = newSeg.GetComponent<HingeJoint2D>();
