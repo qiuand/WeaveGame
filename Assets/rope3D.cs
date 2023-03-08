@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class rope3D : MonoBehaviour
 {
+    float mass = 1;
     float ropeTimer;
     float ropeDuration = 1.0f;
     int inactiveChainLength = 10;
@@ -27,12 +28,15 @@ public class rope3D : MonoBehaviour
     }
     void GenerateRope()
     {
+        float increment = .4f;
         Rigidbody prevBod = hook;
         for (int i = 0; i < linkNum; i++)
         {
             GameObject newSeg = Instantiate(prefabRopeSegments[0]);
+            newSeg.GetComponent<Rigidbody>().mass = mass;
             newSeg.transform.parent = transform;
-            newSeg.transform.position = transform.position;
+            newSeg.transform.position = new Vector3(transform.position.x, transform.position.y + increment, transform.position.z);
+            increment-=.4f;
             HingeJoint hj = newSeg.GetComponent<HingeJoint>();
             hj.connectedBody = prevBod;
             if (i == 0)
@@ -42,6 +46,7 @@ public class rope3D : MonoBehaviour
             }
             StartCoroutine(RedoBody(newSeg));
             prevBod = newSeg.GetComponent<Rigidbody>();
+            mass -= 0.005f;
         }
     }
     public void addSeg()
@@ -58,7 +63,11 @@ public class rope3D : MonoBehaviour
     }
     IEnumerator RedoBody(GameObject seg)
     {
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(5.0f);
         seg.GetComponent<BoxCollider>().isTrigger = false;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        print("jj");
     }
 }

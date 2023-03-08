@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ropeScript3D : MonoBehaviour
 {
+    float weaveDuration=1.0f;
+    float weaveTimer;
+    public GameObject hook;
     public bool hit = false;
     public GameObject above, below;
     // Start is called before the first frame update
@@ -14,7 +17,7 @@ public class ropeScript3D : MonoBehaviour
         if (aboveSegment != null)
         {
             aboveSegment.below = gameObject;
-            float spriteBottom = above.GetComponent<RectTransform>().position.y-0.50f;
+            float spriteBottom = above.GetComponent<RectTransform>().position.y-0.750f;
             GetComponent<HingeJoint>().connectedAnchor = new Vector3(0, spriteBottom, 0);
         }
         else
@@ -36,15 +39,16 @@ public class ropeScript3D : MonoBehaviour
         {
             aboveSeg.below = gameObject;
             float spriteBottom = above.GetComponent<RectTransform>().rect.yMax;
-            GetComponent<HingeJoint>().connectedAnchor = new Vector3(0, spriteBottom * -1, 0);
+            GetComponent<HingeJoint>().connectedAnchor = new Vector3(0, spriteBottom, 0);
         }
         else
         {
             GetComponent<HingeJoint>().connectedAnchor = new Vector3(0, 0, 0);
         }
     }
-    private void OnTriggerEnter(Collider collision)
+    private void OnCollisionEnter(Collision collision)
     {
+        print("yoy");
         if (!transform.parent.GetComponent<HitScript>().isStringHit && collision.gameObject.transform.parent.GetComponent<HitScript>() != null && !collision.gameObject.transform.parent.GetComponent<HitScript>().isStringHit)
         {
             if ((gameObject.tag == "Green" && collision.gameObject.tag == "Blue") || (gameObject.tag == "Blue" && collision.gameObject.tag == "Green"))
@@ -55,7 +59,7 @@ public class ropeScript3D : MonoBehaviour
                 gameManager.rb -= 1f;
                 transform.parent.GetComponent<HitScript>().isStringHit = true;
                 collision.gameObject.transform.parent.GetComponent<HitScript>().isStringHit = true;
-
+                StartCoroutine(WeaveInOut());
             }
             else if ((gameObject.tag == "Green" && collision.gameObject.tag == "Red") || (gameObject.tag == "Red" && collision.gameObject.tag == "Green"))
             {
@@ -65,7 +69,7 @@ public class ropeScript3D : MonoBehaviour
                 gameManager.rb -= 1f;
                 transform.parent.GetComponent<HitScript>().isStringHit = true;
                 collision.gameObject.GetComponent<ropeScript>().hit = true;
-
+                StartCoroutine(WeaveInOut());
             }
             else if ((gameObject.tag == "Blue" && collision.gameObject.tag == "Red") || (gameObject.tag == "Red" && collision.gameObject.tag == "Blue"))
             {
@@ -75,6 +79,7 @@ public class ropeScript3D : MonoBehaviour
                 gameManager.rg -= 1f;
                 transform.parent.GetComponent<HitScript>().isStringHit = true;
                 collision.gameObject.GetComponent<ropeScript>().hit = true;
+                StartCoroutine(WeaveInOut());
             }
         }
         else if ((gameObject.tag == "Green" || gameObject.tag == "Blue" || gameObject.tag == "Red") && !transform.parent.GetComponent<HitScript>().isStringHit && collision.gameObject.tag == "Bounds")
@@ -98,4 +103,16 @@ public class ropeScript3D : MonoBehaviour
             transform.parent.GetComponent<HitScript>().isStringHit = true;
         }
     }
+    public IEnumerator WeaveInOut()
+    {
+        weaveTimer = 0;
+        Vector3 originalPos = hook.transform.position;
+        while (weaveTimer < weaveDuration)
+        {
+            yield return null;
+            weaveTimer += Time.deltaTime;
+            hook.transform.position = Vector3.Lerp(originalPos, -originalPos, weaveTimer / weaveDuration);
+        }
+    }
+
 }

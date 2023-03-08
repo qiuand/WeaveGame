@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HitScript : MonoBehaviour
+public class ss : MonoBehaviour
 {
-    public bool isStringHit = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +17,6 @@ public class HitScript : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        print("ddd");
+        print("jj");
     }
 }
