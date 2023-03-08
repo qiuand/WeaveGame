@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ss : MonoBehaviour
+public class SegCollide : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,9 +17,14 @@ public class ss : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        print("jj");
+        if (gameObject.transform.parent.GetComponent<rope3D>()!=null)
+        {
+            gameObject.transform.parent.GetComponent<rope3D>().ProcessCollision(collision, gameObject);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
+        print(gameObject.tag);
+        gameObject.transform.parent.GetComponent<rope3D>().Skip(gameObject);
     }
 }

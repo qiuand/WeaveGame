@@ -44,15 +44,15 @@ public class gameManager : MonoBehaviour
             recentCamera = false;
             for (int i = 0; i < stringArray.Length; i++)
             {
-                GameObject.Find("rHook").transform.position = rReturn.transform.position;
+/*                GameObject.Find("rHook").transform.position = rReturn.transform.position;
                 GameObject.Find("bHook").transform.position = bReturn.transform.position;
-                GameObject.Find("gHook").transform.position = gReturn.transform.position;
+                GameObject.Find("gHook").transform.position = gReturn.transform.position;*/
 
                 stringArray[i].GetComponent<HitScript>().isStringHit = false;
-                for (int j = 0; j < extLength; j++)
+/*                for (int j = 0; j < extLength; j++)
                 {
-                    stringArray[i].GetComponent<rope>().addSeg();
-                }
+                    stringArray[i].GetComponent<rope3D>().addSeg();
+                }*/
             }
 
 
