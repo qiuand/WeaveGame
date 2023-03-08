@@ -15,16 +15,11 @@ public class SegCollide : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (gameObject.transform.parent.GetComponent<rope3D>()!=null)
         {
             gameObject.transform.parent.GetComponent<rope3D>().ProcessCollision(collision, gameObject);
         }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        print(gameObject.tag);
-        gameObject.transform.parent.GetComponent<rope3D>().Skip(gameObject);
     }
 }

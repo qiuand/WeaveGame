@@ -4,6 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 public class gameManager : MonoBehaviour
 {
+    public GameObject bounds;
+    float camSpeed = 5;
+    public static bool firstRope = false;
+    float camSpace=20;
+    public GameObject bluePre, redPre, greenPre;
+    public GameObject []prefabArray;
     float originalStringYPos = -5.5f;
     int levelIncrement = 0;
     bool recentCamera = false;
@@ -15,6 +21,10 @@ public class gameManager : MonoBehaviour
     int extLength = 15;
     public GameObject gReturn, bReturn, rReturn;
     public GameObject[] returnArray;
+
+    public static GameObject[] oldArray;
+    public static GameObject[] newArray;
+
     public static float went;
     public static float rb, rg, bg;
     [SerializeField] GameObject stats;
@@ -25,11 +35,26 @@ public class gameManager : MonoBehaviour
         bArray = new GameObject[] { greenB, blueB, redB };
         stringArray = new GameObject[] { green, blue, red };
         returnArray = new GameObject[] { gReturn, bReturn, rReturn };
+        prefabArray = new GameObject[] { greenPre, bluePre, redPre };
+
+        oldArray = new GameObject[] { green, blue, red };
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            cam.GetComponent<Rigidbody>().velocity = new Vector3(0, camSpeed, 0);
+        }
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            cam.GetComponent<Rigidbody>().velocity = new Vector3(0, -camSpeed, 0);
+        }
+        else
+        {
+            cam.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+        }
         stats.GetComponent<TMPro.TextMeshProUGUI>().text = "<color=red>Red</color>&<color=blue>Blue</color>: " + rb + "<br><color=red>Red</color>&<color=green>Green</color>: " + rg + "<br><color=blue>Blue</color>&<color=green>Green</color>: " + bg;
         if (went >= 3)
         {
@@ -42,24 +67,26 @@ public class gameManager : MonoBehaviour
         if(isCamDone && recentCamera)
         {
             recentCamera = false;
-            for (int i = 0; i < stringArray.Length; i++)
+            for (int i = 0; i < oldArray.Length; i++)
             {
-/*                GameObject.Find("rHook").transform.position = rReturn.transform.position;
-                GameObject.Find("bHook").transform.position = bReturn.transform.position;
-                GameObject.Find("gHook").transform.position = gReturn.transform.position;*/
-
-                stringArray[i].GetComponent<HitScript>().isStringHit = false;
-/*                for (int j = 0; j < extLength; j++)
-                {
-                    stringArray[i].GetComponent<rope3D>().addSeg();
-                }*/
+                print(oldArray.Length);
+                GameObject newRope = Instantiate(prefabArray[i], new Vector3(oldArray[i].transform.Find("Hook").transform.position.x, cam.transform.position.y, 0), Quaternion.identity);
+                oldArray[i] = newRope;
             }
+            greenB.GetComponent<Follow>().rope = oldArray[0].transform.Find("Hook").gameObject;
+            blueB.GetComponent<Follow>().rope = oldArray[1].transform.Find("Hook").gameObject;
+            redB.GetComponent<Follow>().rope = oldArray[2].transform.Find("Hook").gameObject;
 
 
-            redB.transform.position = GameObject.Find("rHook").transform.position;
-            greenB.transform.position = GameObject.Find("gHook").transform.position;
-            blueB.transform.position = GameObject.Find("bHook").transform.position;
+            redB.transform.position = oldArray[2].transform.Find("Hook").gameObject.transform.position;
+            greenB.transform.position = oldArray[0].transform.Find("Hook").gameObject.transform.position;
+            blueB.transform.position = oldArray[1].transform.Find("Hook").gameObject.transform.position;
 
         }
+    }
+    public void ConnectLink(GameObject connector, GameObject connectee)
+    {
+        connectee.GetComponent<Rigidbody>().transform.position = connector.transform.position;
+        connectee.GetComponent<Rigidbody>().isKinematic = false;
     }
 }

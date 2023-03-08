@@ -11,6 +11,7 @@ TagManager:
   - HookBlue
   - HookRed
   - HookGreen
+  - Fillie
   layers:
   - Default
   - TransparentFX

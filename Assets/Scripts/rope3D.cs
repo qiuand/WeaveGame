@@ -47,10 +47,17 @@ public class rope3D : MonoBehaviour
             if (i == 0)
             {
                 top = hj;
-                newSeg.gameObject.tag = gameObject.tag;
+/*                newSeg.gameObject.tag = gameObject.tag;*/
             }
             StartCoroutine(RedoBody(newSeg));
             prevBod = newSeg.GetComponent<Rigidbody>();
+            if(i>=linkNum/2)
+            {
+                print("yeeee");
+                newSeg.gameObject.tag = "Fillie";
+/*                newSeg.GetComponent<Rigidbody>().transform.localPosition = new Vector3(newSeg.GetComponent<Rigidbody>().transform.position.x, newSeg.GetComponent<Rigidbody>().transform.position.y - 20, newSeg.GetComponent<Rigidbody>().transform.position.z);
+                newSeg.GetComponent<Rigidbody>().isKinematic = true;*/
+            }
             mass -= 0.0025f;
         }
     }
@@ -69,52 +76,55 @@ public class rope3D : MonoBehaviour
     IEnumerator RedoBody(GameObject seg)
     {
         yield return new WaitForSeconds(2.0f);
-        seg.GetComponent<BoxCollider>().isTrigger = false;
+/*        seg.GetComponent<BoxCollider>().isTrigger = false;*/
     }
-    public void ProcessCollision(Collision collision, GameObject collidee)
+    public void ProcessCollision(Collider collision, GameObject collidee)
     {
-        if (!weaving)
+/*        if (!weaving)
         {
             StartCoroutine(WeaveInOut(collision));
-        }
+        }*/
 
-        if (!transform.GetComponent<HitScript>().isStringHit && collision.gameObject.transform.parent.GetComponent<HitScript>() != null && !collision.gameObject.transform.parent.GetComponent<HitScript>().isStringHit)
+        if (!transform.GetComponent<HitScript>().isStringHit && collision.gameObject.transform.parent.GetComponent<HitScript>() != null && !collidee.gameObject.transform.parent.GetComponent<HitScript>().isStringHit && collidee.gameObject.tag == "Fillie" && (collidee.gameObject.tag=="Green"|| collidee.gameObject.tag == "Blue"|| collidee.gameObject.tag == "Red"))
         {
-            StartCoroutine(SetKinematic());
-            print("5");
+            print(gameObject);
+            StartCoroutine( collision.gameObject.transform.parent.GetComponent<rope3D>().SetKinematic());
             if ((collidee.tag == "Green" && collision.gameObject.tag == "Blue") || (collidee.tag == "Blue" && collision.gameObject.tag == "Green"))
             {
-                gameManager.went += 2;
+                gameManager.went += 3;
                 gameManager.bg += 1f;
                 gameManager.rg -= 1f;
                 gameManager.rb -= 1f;
                 transform.GetComponent<HitScript>().isStringHit = true;
                 collision.gameObject.transform.parent.GetComponent<HitScript>().isStringHit = true;
+                StartCoroutine(SetKinematic());
             }
             else if ((collidee.tag == "Green" && collision.gameObject.tag == "Red") || (collidee.tag == "Red" && collision.gameObject.tag == "Green"))
             {
-                gameManager.went += 2;
+                gameManager.went += 3;
                 gameManager.rg += 1f;
                 gameManager.bg -= 1f;
                 gameManager.rb -= 1f;
                 transform.GetComponent<HitScript>().isStringHit = true;
                 collision.gameObject.transform.parent.GetComponent<HitScript>().isStringHit = true;
+                StartCoroutine(SetKinematic());
+
             }
             else if ((collidee.tag == "Blue" && collision.gameObject.tag == "Red") || (collidee.tag == "Red" && collision.gameObject.tag == "Blue"))
             {
-                gameManager.went += 2;
+                gameManager.went += 3;
                 gameManager.rb += 1f;
                 gameManager.bg -= 1f;
                 gameManager.rg -= 1f;
                 transform.GetComponent<HitScript>().isStringHit = true;
                 collision.gameObject.transform.parent.GetComponent<HitScript>().isStringHit = true;
+                StartCoroutine(SetKinematic());
+
             }
         }
-    }
-    public void Skip(GameObject collidee)
-    {
-        if (!transform.GetComponent<HitScript>().isStringHit)
+/*        if (!transform.GetComponent<HitScript>().isStringHit && collision.gameObject.tag == "Bounds")
         {
+            StartCoroutine(SetKinematic());
             gameManager.went += 1;
             transform.GetComponent<HitScript>().isStringHit = true;
 
@@ -133,8 +143,8 @@ public class rope3D : MonoBehaviour
                     gameManager.rg--;
                     break;
             }
-        }
-     }
+        }*/
+    }
     public IEnumerator WeaveInOut(Collision collider)
     {
         weaving = true;
@@ -160,7 +170,7 @@ public class rope3D : MonoBehaviour
     }
     public IEnumerator SetKinematic()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0f);
         for (int i = 0; i < hingeList.Count - 1; i++)
         {
             hingeList[i].GetComponent<Rigidbody>().isKinematic = true;

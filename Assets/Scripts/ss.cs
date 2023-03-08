@@ -17,7 +17,6 @@ public class ss : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        print("jj");
     }
     private void OnTriggerEnter(Collider other)
     {
