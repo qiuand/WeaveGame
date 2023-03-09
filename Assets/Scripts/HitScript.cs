@@ -18,6 +18,5 @@ public class HitScript : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        print("ddd");
     }
 }

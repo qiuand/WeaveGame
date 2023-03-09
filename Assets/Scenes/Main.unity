@@ -841,7 +841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &284353510
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2180,7 +2180,7 @@ MonoBehaviour:
   brImg: {fileID: 0}
   bgImg: {fileID: 0}
   grImg: {fileID: 0}
-  storyImg: {fileID: 0}
+  storyImg: {fileID: 284353509}
   newTextie: {fileID: 17246314}
   narrativeCrawl: {fileID: 1468885766}
   bounds: {fileID: 0}
