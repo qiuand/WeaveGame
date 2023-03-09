@@ -732,7 +732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentOfResponses: {fileID: 160771087}
   prefab_btnResponse: {fileID: 3058503858942907255, guid: f1fc40f1a86dd3e4089a47aac2325722, type: 3}
-  txtMessage: {fileID: 1579905167}
+  txtMessage: {fileID: 1579905168}
   dialogueController: {fileID: 1887896386}
 --- !u!1 &322496263
 GameObject:
@@ -2918,7 +2918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb95ec91875b1d419d1d0f8bcfb1ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  twineText: {fileID: 4900000, guid: 396031af1fc38b744a2538d6ac317693, type: 3}
+  twineText: {fileID: 4900000, guid: 869106b6e9ba42544aed88d537ce40ea, type: 3}
 --- !u!4 &1887896387
 Transform:
   m_ObjectHideFlags: 0
@@ -2977,7 +2977,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3058503858942907251, guid: f1fc40f1a86dd3e4089a47aac2325722, type: 3}
       propertyPath: m_Name
-      value: ButtonResponse
+      value: ButtonOption
       objectReference: {fileID: 0}
     - target: {fileID: 3058503858942907252, guid: f1fc40f1a86dd3e4089a47aac2325722, type: 3}
       propertyPath: m_Pivot.x
