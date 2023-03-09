@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class camControl : MonoBehaviour
 {
-    public static float inDistance = 25f;
+    public static float inDistance = 30f;
     float camTimer;
     float camDuration = 2f;
     Camera cam;

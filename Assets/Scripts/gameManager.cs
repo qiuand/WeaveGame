@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class gameManager : MonoBehaviour
 {
+    public static string triggerType = "";
     public GameObject bounds;
     float camSpeed = 5;
     public static bool firstRope = false;
@@ -24,6 +25,7 @@ public class gameManager : MonoBehaviour
 
     public static GameObject[] oldArray;
     public static GameObject[] newArray;
+    GameObject[] rArray;
 
     public static float went;
     public static float rb, rg, bg;
@@ -32,6 +34,7 @@ public class gameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rArray=new GameObject[] {gReturn, bReturn, rReturn};
         bArray = new GameObject[] { greenB, blueB, redB };
         stringArray = new GameObject[] { green, blue, red };
         returnArray = new GameObject[] { gReturn, bReturn, rReturn };
@@ -70,7 +73,7 @@ public class gameManager : MonoBehaviour
             for (int i = 0; i < oldArray.Length; i++)
             {
                 print(oldArray.Length);
-                GameObject newRope = Instantiate(prefabArray[i], new Vector3(oldArray[i].transform.Find("Hook").transform.position.x, cam.transform.position.y, 0), Quaternion.identity);
+                GameObject newRope = Instantiate(prefabArray[i], new Vector3(/*oldArray[i].transform.Find("Hook").transform.position.x*/rArray[i].transform.position.x, cam.transform.position.y, 0), Quaternion.identity);
                 oldArray[i] = newRope;
             }
             greenB.GetComponent<Follow>().rope = oldArray[0].transform.Find("Hook").gameObject;

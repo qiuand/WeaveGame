@@ -18,13 +18,17 @@ public class Follow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        rope.GetComponent<Rigidbody>().position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, rope.transform.position.z);
-        rope.GetComponent<Rigidbody>().velocity=(new Vector3(5, 5, 5));
-        print(Input.mouseScrollDelta.y * speed * Time.deltaTime);
-        if (down)
+        if (!rope.gameObject.transform.parent.gameObject.GetComponent<HitScript>().isStringHit)
         {
-            FollowTrail();
+            rope.GetComponent<Rigidbody>().position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, rope.transform.position.z);
+            if (down)
+            {
+                FollowTrail();
+            }
+        }
+        else
+        {
+            MousieUp();
         }
     }
     public void FollowTrail()

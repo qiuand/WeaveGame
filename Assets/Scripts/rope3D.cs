@@ -51,12 +51,19 @@ public class rope3D : MonoBehaviour
             }
             StartCoroutine(RedoBody(newSeg));
             prevBod = newSeg.GetComponent<Rigidbody>();
+            if (i <= 2)
+            {
+                newSeg.gameObject.GetComponent<MeshRenderer>().enabled = false;
+            }
             if(i>=linkNum/2)
             {
                 print("yeeee");
                 newSeg.gameObject.tag = "Fillie";
+            }
+            if (i == linkNum-1)
+            {
 /*                newSeg.GetComponent<Rigidbody>().transform.localPosition = new Vector3(newSeg.GetComponent<Rigidbody>().transform.position.x, newSeg.GetComponent<Rigidbody>().transform.position.y - 20, newSeg.GetComponent<Rigidbody>().transform.position.z);
-                newSeg.GetComponent<Rigidbody>().isKinematic = true;*/
+*/                newSeg.GetComponent<Rigidbody>().isKinematic = true;
             }
             mass -= 0.0025f;
         }
@@ -85,13 +92,13 @@ public class rope3D : MonoBehaviour
             StartCoroutine(WeaveInOut(collision));
         }*/
 
-        if (!transform.GetComponent<HitScript>().isStringHit && collision.gameObject.transform.parent.GetComponent<HitScript>() != null && !collidee.gameObject.transform.parent.GetComponent<HitScript>().isStringHit && collidee.gameObject.tag == "Fillie" && (collidee.gameObject.tag=="Green"|| collidee.gameObject.tag == "Blue"|| collidee.gameObject.tag == "Red"))
+        if (!transform.GetComponent<HitScript>().isStringHit && collision.gameObject.transform.parent.GetComponent<HitScript>() != null && !collidee.gameObject.transform.parent.GetComponent<HitScript>().isStringHit && collidee.gameObject.tag != "Fillie" && (collidee.gameObject.tag=="Green"|| collidee.gameObject.tag == "Blue"|| collidee.gameObject.tag == "Red"))
         {
-            print(gameObject);
             StartCoroutine( collision.gameObject.transform.parent.GetComponent<rope3D>().SetKinematic());
             if ((collidee.tag == "Green" && collision.gameObject.tag == "Blue") || (collidee.tag == "Blue" && collision.gameObject.tag == "Green"))
             {
-                gameManager.went += 3;
+                HandleButton("bg");
+                gameManager.went += 2;
                 gameManager.bg += 1f;
                 gameManager.rg -= 1f;
                 gameManager.rb -= 1f;
@@ -101,7 +108,8 @@ public class rope3D : MonoBehaviour
             }
             else if ((collidee.tag == "Green" && collision.gameObject.tag == "Red") || (collidee.tag == "Red" && collision.gameObject.tag == "Green"))
             {
-                gameManager.went += 3;
+                HandleButton("gr");
+                gameManager.went += 2;
                 gameManager.rg += 1f;
                 gameManager.bg -= 1f;
                 gameManager.rb -= 1f;
@@ -112,7 +120,8 @@ public class rope3D : MonoBehaviour
             }
             else if ((collidee.tag == "Blue" && collision.gameObject.tag == "Red") || (collidee.tag == "Red" && collision.gameObject.tag == "Blue"))
             {
-                gameManager.went += 3;
+                HandleButton("br");
+                gameManager.went += 2;
                 gameManager.rb += 1f;
                 gameManager.bg -= 1f;
                 gameManager.rg -= 1f;
@@ -122,7 +131,7 @@ public class rope3D : MonoBehaviour
 
             }
         }
-/*        if (!transform.GetComponent<HitScript>().isStringHit && collision.gameObject.tag == "Bounds")
+        if (!transform.GetComponent<HitScript>().isStringHit && collision.gameObject.tag == "Bounds" && gameManager.went==2)
         {
             StartCoroutine(SetKinematic());
             gameManager.went += 1;
@@ -143,7 +152,11 @@ public class rope3D : MonoBehaviour
                     gameManager.rg--;
                     break;
             }
-        }*/
+        }
+    }
+    public void HandleButton(string condition)
+    {
+        gameManager.triggerType = condition;
     }
     public IEnumerator WeaveInOut(Collision collider)
     {
@@ -173,7 +186,8 @@ public class rope3D : MonoBehaviour
         yield return new WaitForSeconds(0f);
         for (int i = 0; i < hingeList.Count - 1; i++)
         {
-            hingeList[i].GetComponent<Rigidbody>().isKinematic = true;
+            Destroy(hingeList[i].GetComponent<Collider>());
+            /*            hingeList[i].GetComponent<Rigidbody>().isKinematic = true;*/
         }
     }
 }
