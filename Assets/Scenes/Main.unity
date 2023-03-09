@@ -237,7 +237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -841,7 +841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &284353510
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2177,9 +2177,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b20408c30ee3441bf6ed59f1218fde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brImg: {fileID: 0}
-  bgImg: {fileID: 0}
-  grImg: {fileID: 0}
+  brImg: {fileID: 21300000, guid: 91c5ee8736ffdf74aa385fd9384e0ab1, type: 3}
+  bgImg: {fileID: 21300000, guid: 2ceac49120ff5674081732e63b2563a9, type: 3}
+  grImg: {fileID: 21300000, guid: 80d98a1b99df2874680987b7025017a0, type: 3}
   storyImg: {fileID: 284353509}
   newTextie: {fileID: 17246314}
   narrativeCrawl: {fileID: 1468885766}
