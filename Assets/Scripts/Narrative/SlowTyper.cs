@@ -38,7 +38,7 @@ public class SlowTyper : MonoBehaviour
         text = GetComponent<TMPro.TextMeshProUGUI>();
     }
  
-    public void Begin(bool pauses, string data, UnityAction callback = null)
+    public void Begin( string data, UnityAction callback = null)
     {
         Init();
         numShowing = 0;
