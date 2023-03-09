@@ -164,7 +164,7 @@ public class DialogueObject {
                         }
                             
                         else
-                            curResponse.displayText = curResponseData.Substring( destinationStart, destinationEnd );
+                            curResponse.displayText = curResponseData.Substring( destinationStart +2, destinationEnd-2 );
                         curNode.responses.Add( curResponse );
                     }
                 }
