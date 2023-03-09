@@ -91,24 +91,45 @@ This is branch A in choice 2 of the 3rd branch
 
 :: Ending1 {"position":"300,550","size":"100,100"}
 Ending 1
+
 [[x]]
 
 :: Ending2 {"position":"400,550","size":"100,100"}
 Ending 2
+
 [[x]]
 
 :: Ending3 {"position":"550,550","size":"100,100"}
 Ending 3
+
 [[x]]
 
 :: Ending4 {"position":"650,550","size":"100,100"}
 Ending 4
+
 [[x]]
 
 :: Ending5 {"position":"800,550","size":"100,100"}
 Ending 5
+
 [[x]]
 
 :: Ending6 {"position":"900,550","size":"100,100"}
 Ending 6
+
 [[x]]
+
+::x
+
+This is 2nd branch in choice 1 Choice #2 Choose branch [[B_C2_A]]
+[[B_C2_B]]This is 3rd branch in choice 1 Choice #2 Choose branch
+[[C_C2_A]] [[C_C2_B]]This is sample dialogue Choice #1 Choose branch
+[[C1_1st]] [[C1_2nd]] [[C1_3rd]]This is 1st branch in choice 1 Choice #2
+Choose branch [[A_C2_A]] [[A_C2_B]]This is branch A in choice 2 of the
+1st branch [[Ending1]]This is branch B in choice 2 of the 1st branch
+[[Ending2]]This is branch A in choice 2 of the 2nd branch
+[[Ending3]]This is branch B in choice 2 of the 2nd branch
+[[Ending4]]This is branch A in choice 2 of the 3rd branch
+[[Ending5]]This is branch A in choice 2 of the 3rd branch
+[[Ending6]]Ending 1 [[x]]Ending 2 [[x]]Ending 3 [[x]]Ending 4
+[[x]]Ending 5 [[x]]Ending 6 [[x]]

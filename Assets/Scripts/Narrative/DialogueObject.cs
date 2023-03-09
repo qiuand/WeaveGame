@@ -103,7 +103,7 @@ public class DialogueObject {
                 int titleEnd = tagsPresent
                     ? currLineText.IndexOf( "[" )
                     : endOfFirstLine;
-                UnityEngine.Assertions.Assert.IsTrue( titleEnd > 0, "Maybe you have a node with no responses?" );
+                //UnityEngine.Assertions.Assert.IsTrue( titleEnd > 0, "Maybe you have a node with no responses?" );
                 string title = currLineText.Substring(titleStart, titleEnd).Trim();
  
                 // Extract Tags (if any)

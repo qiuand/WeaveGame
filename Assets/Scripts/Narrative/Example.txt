@@ -1,0 +1,25 @@
+:: StoryTitle
+SampleGame
+
+:: UserScript [script]
+
+
+:: UserStylesheet [stylesheet]
+
+
+::Start-Node[START]
+Mon comes to the kitchen
+[[Cheetos]]
+[[Frosted flakes]]
+
+::Cheetos
+The cheetos are not very delicious
+[[Cry]]
+
+::Frosted flakes
+The frosted flakes were not very delicious.
+[[Cry]]
+
+::Cry
+you cried
+[[x]]

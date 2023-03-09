@@ -8,14 +8,14 @@ public class NarrativeManager : MonoBehaviour
 
     private static int MAXOPTIONS = 3;
 
-    private string sampleDialogue = "This is the sample dialogue";
+    private string sampleDialogue = "This is the sample dialogue in manager";
 
     private string[,] inGameDialogues = new string[MAXOPTIONS, MAXBRANCHES];
     public GameObject dialogueObj;
 
     void Start()
     {
-        dialogueObj.GetComponent<TMPro.TextMeshProUGUI>().text = sampleDialogue;
+        //dialogueObj.GetComponent<TMPro.TextMeshProUGUI>().text = sampleDialogue;
         SetUp();
     }
 
