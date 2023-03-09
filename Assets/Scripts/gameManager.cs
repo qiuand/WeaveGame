@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class gameManager : MonoBehaviour
 {
     public Sprite brImg, bgImg, grImg;
@@ -54,6 +55,10 @@ public class gameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             narrativeCrawl.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Main");
         }
         if (Input.GetKey(KeyCode.UpArrow))
         {
