@@ -1,0 +1,68 @@
+:: StoryTitle
+UntitledStory
+
+:: UserScript [script]
+
+
+:: UserStylesheet [stylesheet]
+
+
+:: Untitled Passage[START]
+sample0
+[[1111]]
+[[2222]]
+[[3333]]
+
+:: 1111
+sample1
+[[1a]]
+[[1b]]
+[[1c]]
+
+:: 2222
+sample2
+[[1d]]
+[[1e]]
+[[1f]]
+
+:: 3333
+sample3
+[[1g]]
+[[1h]]
+[[1i]]
+
+:: 1a 
+dialogue
+[[x]]
+
+:: 1b 
+dialogue
+[[x]]
+
+:: 1c 
+dialogue
+[[x]]
+
+:: 1d 
+dialogue
+[[x]]
+
+:: 1e 
+dialogue
+[[x]]
+
+:: 1f
+dialogue
+[[x]]
+
+:: 1g 
+dialogue
+[[x]]
+
+:: 1h 
+dialogue
+[[x]]
+
+:: 1i 
+dialogue
+[[x]]

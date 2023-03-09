@@ -17,7 +17,6 @@ public class DialogueController : MonoBehaviour {
     }
  
     public void InitializeDialogue() {
-        //if (twineText.)
         curDialogue = new Dialogue( twineText );
         curNode = curDialogue.GetStartNode();
         onEnteredNode( curNode );

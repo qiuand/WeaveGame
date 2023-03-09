@@ -13,10 +13,9 @@ public class DialogueViewer : MonoBehaviour
     [SerializeField] Button prefab_btnResponse;
     //[SerializeField] SlowTyper txtMessage;
     [SerializeField] TextMeshProUGUI txtMessage;
-    //[SerializeField] UnityEngine.UI.Text txtMessage;
 
     //[SerializeField] SlowTyper txtTitle;
-    //[SerializeField] Image imgMemory;
+    [SerializeField] Image imgMemory;
     //[SerializeField] Button btnSpeedyProgress;
     [SerializeField] DialogueController dialogueController;
     DialogueController controller;
@@ -31,8 +30,6 @@ public class DialogueViewer : MonoBehaviour
 
         // Start the dialogue
         var curNode = controller.GetCurrentNode();
-        //Debug.Log(curNode.text);
-
     }
 
     public static void KillAllChildren(UnityEngine.Transform parent)
@@ -54,27 +51,33 @@ public class DialogueViewer : MonoBehaviour
     {
         Debug.Log("Entering Node: " + newNode.title);
 
-
-        //txtMessage.text = newNode.text;
         KillAllChildren(parentOfResponses);
-        
-            for (int i = newNode.responses.Count - 1; i >= 0; i--)
-            {
-                Debug.Log("i["+i.ToString()+"], newNode.responses.Count["+newNode.responses.Count.ToString()+"]");
-                int currentChoiceIndex = i;
-                var response = newNode.responses[i];
-                var responceButton = Instantiate(prefab_btnResponse, parentOfResponses);
-                responceButton.GetComponentInChildren<TextMeshProUGUI>().text = response.displayText;
 
-                txtMessage.text = response.messageText;
-                //Debug.Log(newNode.text);
-                Debug.Log("DisplayText["+response.displayText+"]");
-                responceButton.onClick.AddListener(delegate { OnNodeSelected(currentChoiceIndex); });
-            }
-        
-        //Debug.Log("End");
+        for (int i = newNode.responses.Count - 1; i >= 0; i--)
+        {
+            Debug.Log("i[" + i.ToString() + "], newNode.responses.Count[" + newNode.responses.Count.ToString() + "]");
+            int currentChoiceIndex = i;
+            var response = newNode.responses[i];
+            var responceButton = Instantiate(prefab_btnResponse, parentOfResponses);
+            responceButton.GetComponentInChildren<TextMeshProUGUI>().text = response.displayText;
 
-        //txtMessage.text = "aaaaa";
+            txtMessage.text = response.messageText;
+            Debug.Log("DisplayText[" + response.displayText + "]");
+            responceButton.onClick.AddListener(delegate { OnNodeSelected(currentChoiceIndex); });
+        }
 
+            UnityAction showMemoryAfterTitle = delegate {
+            Debug.Log("Showing: " + newNode.title + ".jpg");
+            Texture2D memoryTexture = Resources.Load<Texture2D>(newNode.title);
+            Sprite memoryImage = Texture2DToSprite(memoryTexture);
+            imgMemory.sprite = memoryImage;
+            //imgMemory.GetComponent<Oscillate>().Begin();
+            //ShowContinueButton(typeMessageAfterTitle);
+            //txtMessage.Clear();
+        };
+    }
+
+    public static Sprite Texture2DToSprite( Texture2D t ) {
+        return Sprite.Create( t, new Rect( 0, 0, t.width, t.height ), new Vector2( 0.5f, 0.5f ) );
     }
 }

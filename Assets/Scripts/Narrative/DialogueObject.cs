@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
- 
+
 public class DialogueObject {
     private const string kStart = "START";
     private const string kEnd = "END";
