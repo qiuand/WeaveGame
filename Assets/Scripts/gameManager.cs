@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 public class gameManager : MonoBehaviour
 {
+    public Sprite brImg, bgImg, grImg;
+    public GameObject storyImg;
+
+    public GameObject newTextie;
+    public GameObject narrativeCrawl;
     public static string triggerType = "";
     public GameObject bounds;
     float camSpeed = 5;
@@ -46,6 +51,10 @@ public class gameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            narrativeCrawl.SetActive(false);
+        }
         if (Input.GetKey(KeyCode.UpArrow))
         {
             cam.GetComponent<Rigidbody>().velocity = new Vector3(0, camSpeed, 0);
@@ -87,7 +96,25 @@ public class gameManager : MonoBehaviour
             greenB.transform.position = new Vector3(greenB.transform.position.x, greenB.transform.position.y, -260);
             blueB.transform.position = oldArray[1].transform.Find("Hook").gameObject.transform.position;
             blueB.transform.position = new Vector3(blueB.transform.position.x, blueB.transform.position.y, -260);
-
+            newTextie.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y-10, newTextie.transform.position.z);
+            storyImg.SetActive(true);
+            storyImg.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, newTextie.transform.position.z);
+            switch (triggerType)
+            {
+                case "br":
+                    newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = "- The child elf, Eira, is crying over the bodies of her parents that are buried under the rubble of their burned house- The father is dead while the mother is stuck halfway- The dwarf Samra hears Eira and sees an orc about to kill her";
+                    storyImg.GetComponent<Image>().sprite = brImg;
+                    break;
+                case "bg":
+                    newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = "- The child elf, Eira, is crying- The dwarf Samra hears her-Samra rushes over as Kolrick hesitantly raises his weapon on Eira-Samra pushes Eira aside just in time and comes in the way of the attack and blocks it with her metal arm";
+                    storyImg.GetComponent<Image>().sprite = bgImg;
+                    break;
+                case "gr":
+                    storyImg.GetComponent<Image>().sprite = grImg;
+                    newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = "- Kolrick continues killing the adult elves in a blinded rage- Before he knew it, he came face to face with a crying child elf(Eira)-He doesn't know what to do as his duty clashes with his morals";
+                    break;
+            }
+            triggerType = "";
         }
     }
     public void ConnectLink(GameObject connector, GameObject connectee)
