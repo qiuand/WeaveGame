@@ -10,10 +10,12 @@ public class DialogueObject {
     public struct Response {
         public string displayText;
         public string destinationNode;
+        public string messageText;
  
-        public Response( string display, string destination ) {
+        public Response( string display, string destination, string messageTxt) {
             displayText = display;
             destinationNode = destination;
+            messageText = messageTxt;
         }
     }
  
@@ -105,7 +107,7 @@ public class DialogueObject {
                     : endOfFirstLine;
                 //UnityEngine.Assertions.Assert.IsTrue( titleEnd > 0, "Maybe you have a node with no responses?" );
                 string title = currLineText.Substring(titleStart, titleEnd).Trim();
- 
+                
                 // Extract Tags (if any)
                 string tags = tagsPresent
                     ? currLineText.Substring( titleEnd + 1, (endOfFirstLine - titleEnd)-2)
@@ -122,7 +124,7 @@ public class DialogueObject {
                 curNode.title = title;
                 curNode.text = messsageText;
                 curNode.tags = new List<string>( tags.Split( new string[] { " " }, StringSplitOptions.None ) );
- 
+                Debug.Log("MessageText: "+messsageText);
                 if ( curNode.tags.Contains( kStart ) )
                 {
                     UnityEngine.Assertions.Assert.IsTrue( null == titleOfStartNode );
@@ -147,16 +149,22 @@ public class DialogueObject {
                         }
  
                         Response curResponse = new Response();
+                        Debug.Log(curResponseData);
                         int destinationStart = curResponseData.IndexOf( "[[" );
                         int destinationEnd = curResponseData.IndexOf( "]]" );
                         UnityEngine.Assertions.Assert.IsFalse( destinationStart == -1, "No destination around in node titled, '" + curNode.title + "'" );
                         UnityEngine.Assertions.Assert.IsFalse( destinationEnd == -1, "No destination around in node titled, '" + curNode.title + "'" );
                         string destination = curResponseData.Substring(destinationStart + 2, (destinationEnd - destinationStart)-2);
                         curResponse.destinationNode = destination;
-                        if ( destinationStart == 0 )
+                        curResponse.messageText = messsageText;
+                        if ( destinationStart == -1 )
+                        {
+                            Debug.Log("The current response is empty.");
                             curResponse.displayText = ""; // If message-less, then message is an empty string
+                        }
+                            
                         else
-                            curResponse.displayText = curResponseData.Substring( 0, destinationStart );
+                            curResponse.displayText = curResponseData.Substring( destinationStart, destinationEnd );
                         curNode.responses.Add( curResponse );
                     }
                 }

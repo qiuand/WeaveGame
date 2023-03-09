@@ -7,19 +7,19 @@ SampleGame
 :: UserStylesheet [stylesheet]
 
 
-::Start-Node[START]
+:: Start-Node[START]
 Mon comes to the kitchen
 [[Cheetos]]
 [[Frosted flakes]]
 
-::Cheetos
+:: Cheetos
 The cheetos are not very delicious
 [[Cry]]
 
-::Frosted flakes
+:: Frosted flakes
 The frosted flakes were not very delicious.
 [[Cry]]
 
-::Cry
+:: Cry
 you cried
 [[x]]

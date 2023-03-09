@@ -30,9 +30,8 @@ public class DialogueViewer : MonoBehaviour
         controller.InitializeDialogue();
 
         // Start the dialogue
-        
         var curNode = controller.GetCurrentNode();
-                    Debug.Log(curNode.text);
+        //Debug.Log(curNode.text);
 
     }
 
@@ -53,25 +52,27 @@ public class DialogueViewer : MonoBehaviour
 
     private void OnNodeEntered(Node newNode)
     {
-        Debug.Log("ON");
+        Debug.Log("Entering Node: " + newNode.title);
 
-        //txtMessage.text = "aaaaa";
+
+        //txtMessage.text = newNode.text;
         KillAllChildren(parentOfResponses);
-
-        for (int i = newNode.responses.Count - 1; i >= 0; i--)
-        {
-            int currentChoiceIndex = i;
-            var response = newNode.responses[i];
-            var responceButton = Instantiate(prefab_btnResponse, parentOfResponses);
-            responceButton.GetComponentInChildren<TextMeshProUGUI>().text = response.displayText;
-
-            txtMessage.text = response.displayText;
-            Debug.Log(newNode.text);
-             Debug.Log(newNode.responses[i].displayText);
-            responceButton.onClick.AddListener(delegate { OnNodeSelected(currentChoiceIndex); });
-        }
         
-        Debug.Log("End");
+            for (int i = newNode.responses.Count - 1; i >= 0; i--)
+            {
+                Debug.Log("i["+i.ToString()+"], newNode.responses.Count["+newNode.responses.Count.ToString()+"]");
+                int currentChoiceIndex = i;
+                var response = newNode.responses[i];
+                var responceButton = Instantiate(prefab_btnResponse, parentOfResponses);
+                responceButton.GetComponentInChildren<TextMeshProUGUI>().text = response.displayText;
+
+                txtMessage.text = response.messageText;
+                //Debug.Log(newNode.text);
+                Debug.Log("DisplayText["+response.displayText+"]");
+                responceButton.onClick.AddListener(delegate { OnNodeSelected(currentChoiceIndex); });
+            }
+        
+        //Debug.Log("End");
 
         //txtMessage.text = "aaaaa";
 
