@@ -157,7 +157,7 @@ public class DialogueObject {
                         string destination = curResponseData.Substring(destinationStart + 2, (destinationEnd - destinationStart)-2);
                         curResponse.destinationNode = destination;
                         curResponse.messageText = messsageText;
-                        if ( destinationStart == 0 )
+                        if ( destinationStart == -1 )
                         {
                             Debug.Log("The current response is empty.");
                             curResponse.displayText = ""; // If message-less, then message is an empty string
