@@ -82,8 +82,11 @@ public class gameManager : MonoBehaviour
 
 
             redB.transform.position = oldArray[2].transform.Find("Hook").gameObject.transform.position;
+            redB.transform.position = new Vector3(redB.transform.position.x, redB.transform.position.y, -260);
             greenB.transform.position = oldArray[0].transform.Find("Hook").gameObject.transform.position;
+            greenB.transform.position = new Vector3(greenB.transform.position.x, greenB.transform.position.y, -260);
             blueB.transform.position = oldArray[1].transform.Find("Hook").gameObject.transform.position;
+            blueB.transform.position = new Vector3(blueB.transform.position.x, blueB.transform.position.y, -260);
 
         }
     }

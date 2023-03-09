@@ -5,7 +5,7 @@ using UnityEngine;
 public class Follow : MonoBehaviour
 {
 
-    float speed=.5f;
+    float speed=1f;
     public string followType;
     bool down = false;
     public GameObject rope;

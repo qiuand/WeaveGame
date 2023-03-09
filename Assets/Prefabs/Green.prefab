@@ -147,7 +147,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1037188da571741bcd42aede453688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sparks: {fileID: 0}
   hook: {fileID: 0}
   prefabRopeSegments: []
   linkNum: 5
+  clink: {fileID: 0}
+  down: {fileID: 0}
   top: {fileID: 0}

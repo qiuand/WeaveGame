@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class rope3D : MonoBehaviour
 {
+    public GameObject sparks;
     bool inThing=false;
     float weaveTimer;
     float weaveDuration = 1.0f;
@@ -16,13 +17,15 @@ public class rope3D : MonoBehaviour
     public GameObject[] prefabRopeSegments;
     public int linkNum = 5;
     List<GameObject> hingeList= new List<GameObject>();
-
+    AudioSource src;
+    public AudioClip clink, down;
     public HingeJoint top;
     // Start is called before the first frame update
     void Start()
     {
         GenerateRope();
         ropeTimer = ropeDuration;
+        src = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -94,7 +97,9 @@ public class rope3D : MonoBehaviour
 
         if (!transform.GetComponent<HitScript>().isStringHit && collision.gameObject.transform.parent.GetComponent<HitScript>() != null && !collidee.gameObject.transform.parent.GetComponent<HitScript>().isStringHit && collidee.gameObject.tag != "Fillie" && (collidee.gameObject.tag=="Green"|| collidee.gameObject.tag == "Blue"|| collidee.gameObject.tag == "Red"))
         {
+            Instantiate(sparks, collision.transform);
             StartCoroutine( collision.gameObject.transform.parent.GetComponent<rope3D>().SetKinematic());
+            src.PlayOneShot(clink);
             if ((collidee.tag == "Green" && collision.gameObject.tag == "Blue") || (collidee.tag == "Blue" && collision.gameObject.tag == "Green"))
             {
                 HandleButton("bg");
@@ -136,7 +141,7 @@ public class rope3D : MonoBehaviour
             StartCoroutine(SetKinematic());
             gameManager.went += 1;
             transform.GetComponent<HitScript>().isStringHit = true;
-
+            src.PlayOneShot(down);
             switch (collidee.tag)
             {
                 case "Green":
