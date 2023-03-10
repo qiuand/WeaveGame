@@ -65,8 +65,10 @@ public class DialogueViewer : MonoBehaviour
             Debug.Log("DisplayText[" + response.displayText + "]");
             responceButton.onClick.AddListener(delegate { OnNodeSelected(currentChoiceIndex); });
         }
+            Debug.Log("Showmemory");
 
-            UnityAction showMemoryAfterTitle = delegate {
+        UnityAction showMemoryAfterTitle = delegate
+        {
             Debug.Log("Showing: " + newNode.title + ".jpg");
             Texture2D memoryTexture = Resources.Load<Texture2D>(newNode.title);
             Sprite memoryImage = Texture2DToSprite(memoryTexture);
@@ -77,18 +79,10 @@ public class DialogueViewer : MonoBehaviour
         };
     }
 
-    public static Sprite Texture2DToSprite( Texture2D t ) {
-        return Sprite.Create( t, new Rect( 0, 0, t.width, t.height ), new Vector2( 0.5f, 0.5f ) );
-    }
-
-    void CallImageByIndex(int index)
+    public static Sprite Texture2DToSprite(Texture2D t)
     {
-        if (index == 0)
-        {
-
-        }
-        else if (index == 1)
-
-
+        return Sprite.Create(t, new Rect(0, 0, t.width, t.height), new Vector2(0.5f, 0.5f));
     }
+    
+
 }

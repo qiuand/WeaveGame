@@ -124,7 +124,7 @@ public class DialogueObject {
                 curNode.title = title;
                 curNode.text = messsageText;
                 curNode.tags = new List<string>( tags.Split( new string[] { " " }, StringSplitOptions.None ) );
-                Debug.Log("MessageText: "+messsageText);
+                //Debug.Log("MessageText: "+messsageText);
                 if ( curNode.tags.Contains( kStart ) )
                 {
                     UnityEngine.Assertions.Assert.IsTrue( null == titleOfStartNode );
@@ -149,7 +149,7 @@ public class DialogueObject {
                         }
  
                         Response curResponse = new Response();
-                        Debug.Log(curResponseData);
+                        //Debug.Log(curResponseData);
                         int destinationStart = curResponseData.IndexOf( "[[" );
                         int destinationEnd = curResponseData.IndexOf( "]]" );
                         UnityEngine.Assertions.Assert.IsFalse( destinationStart == -1, "No destination around in node titled, '" + curNode.title + "'" );
@@ -159,7 +159,7 @@ public class DialogueObject {
                         curResponse.messageText = messsageText;
                         if ( destinationStart == -1 )
                         {
-                            Debug.Log("The current response is empty.");
+                            //Debug.Log("The current response is empty.");
                             curResponse.displayText = ""; // If message-less, then message is an empty string
                         }
                             
