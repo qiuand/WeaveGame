@@ -3424,6 +3424,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b20408c30ee3441bf6ed59f1218fde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  i1: {fileID: 0}
+  i2: {fileID: 0}
+  i3: {fileID: 0}
+  i4: {fileID: 0}
+  i5: {fileID: 0}
+  i6: {fileID: 0}
+  i7: {fileID: 0}
+  i8: {fileID: 0}
+  i9: {fileID: 0}
+  i10: {fileID: 0}
+  i11: {fileID: 0}
+  i12: {fileID: 0}
+  i13: {fileID: 0}
+  i14: {fileID: 0}
+  i15: {fileID: 0}
   exposit: {fileID: 957534461}
   brImg: {fileID: 21300000, guid: 91c5ee8736ffdf74aa385fd9384e0ab1, type: 3}
   bgImg: {fileID: 21300000, guid: 2ceac49120ff5674081732e63b2563a9, type: 3}
@@ -9656,7 +9671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb95ec91875b1d419d1d0f8bcfb1ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  twineText: {fileID: 4900000, guid: 870b5a18294d56f4b850596695cd692e, type: 3}
+  twineText: {fileID: 4900000, guid: eb80946a49f302e4a859ea9292e1d46d, type: 3}
 --- !u!4 &1879017901
 Transform:
   m_ObjectHideFlags: 0
