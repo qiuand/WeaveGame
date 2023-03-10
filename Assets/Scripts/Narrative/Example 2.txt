@@ -9,167 +9,170 @@ Fatebinder
 
 
 :: Exposition [START]
-Scattered embers danced as they rose through the night sky; their very presence giving those near it a sense of warmth and security. However, this was not one of those nights. These embers didn’t flutter with grace, but instead raged as they ripped everything they touched to shreds. The sky was ablaze with flames as the once-beautiful elf village burned to the ground. The air was thick with smoke, and the screams of the dying filled the air. The villagers were running in all directions, their homes and belongings destroyed by the raging fire.
+Scattered embers danced as they rose through the night sky; their very presence giving those near it a sense of warmth and security. However, this was not one of those nights. These embers didn’t flutter with grace, but instead raged as they ripped everything they touched to shreds. The sky was ablaze with flames as the once-beautiful <color=blue>elf</color> village burned to the ground. The air was thick with smoke, and the screams of the dying filled the air. The villagers were running in all directions, their homes and belongings destroyed by the raging fire.
 
-The tribe of orcs had attacked without warning, catching the elves off guard. The orcs were merciless, wielding their axes and swords with deadly precision. They moved through the village, leaving destruction in their wake. The elves tried to fight back, but they were outnumbered and outmatched.
+The tribe of orcs had attacked without warning, catching the <color=blue>elves</color> off guard. The <color=green>orcs</color> were merciless, wielding their axes and swords with deadly precision. They moved through the village, leaving destruction in their wake. The <color=blue>elves</color> tried to fight back, but they were outnumbered and outmatched.
 
 [[br]]
 [[bg]]
 [[gr]]
 
+
 :: br
-In the midst of the chaos, there stood a child elf named Eira. Tears streamed down the face of the young elf as they stood over the corpses of their parents, their bodies crushed under the rubble of their burned down home. The child's heart ached with grief, pain, and anger. Eira looked over at the corpse of her father. It was cold, lifeless. Her mother on the other hand lived, albeit only temporarily as half her body remained stuck in the wreckage. Powerless to do anything, all she could do was cry for help in that hopeless situation.
+In the midst of the chaos, there stood a child <color=blue>elf</color> named <color=blue>Eira</color>. Tears streamed down the face of the young <color=blue>elf</color> as they stood over the corpses of their parents, their bodies crushed under the rubble of their burned down home. The child's heart ached with grief, pain, and anger. <color=blue>Eira</color> looked over at the corpse of her father. It was cold, lifeless. Her mother on the other hand lived, albeit only temporarily as half her body remained stuck in the wreckage. Powerless to do anything, all she could do was cry for help in that hopeless situation.
 
-Then, Eira's tears froze as she heard the footsteps of an orc behind her. The reality of the situation hit Eira like a ton of bricks. Her world had been shattered, and she was alone in a world that had turned dark and cold.
+Then,<color=blue>Eira's</color> tears froze as she heard the footsteps of an <color=green>orc</color> behind her. The reality of the situation hit <color=blue>Eira</color> like a ton of bricks. Her world had been shattered, and she was alone in a world that had turned dark and cold.
 
-But her plea was heard, as Samra, a female Dwarf that happened to be tasked with a mission in the village, heard her cries.
+But her plea was heard, as <color=red>Samra</color>, a female <color=red>Dwarf</color> that happened to be tasked with a mission in the village, heard her cries.
 
 [[br elf route]]
 [[bg elf route]]
 [[gr elf route]]
 
-:: bg
-Among the rampaging orcs was a young warrior named Kolrik. He had been trained since birth to fight and conquer, and he relished the thrill of battle, though he was more disciplined than most orcs. But on this night fueled with rage and betrayal, nothing was on his mind but revenge and slaughter. One after the other, the elves fell at the swing of his weapon. However in his rampage, a shallow cry entered his eardrums and made him stop mid swing. In front of him was a little elven child crying in terror.
 
-He knew what he had to do, but Kolrik stood frozen. Torn between the loyalty to his army and his own sense of morality, he didn't know what to do...
+:: bg
+Among the rampaging <color=green>orcs</color> was a young warrior named <color=green>Kolrik</color>. He had been trained since birth to fight and conquer, and he relished the thrill of battle, though he was more disciplined than most <color=green>orcs</color>. But on this night fueled with rage and betrayal, nothing was on his mind but revenge and slaughter. One after the other, the <color=blue>elves</color> fell at the swing of his weapon. However in his rampage, a shallow cry entered his eardrums and made him stop mid swing. In front of him was a little <color=blue>elven</color> child crying in terror.
+
+He knew what he had to do, but <color=green>Kolrik</color> stood frozen. Torn between the loyalty to his army and his own sense of morality, he didn't know what to do...
 
 [[gr orc route]]
 [[bg orc route]]
 [[gr orc route]]
 
-:: gr
-The wind carried with it the howls of life being torn asunder by powers far greater than any mortal could fathom. Tonight was supposed to be special for Samra. Assigned her first mission after spending the last decade honing her talents, sharpening her mind, preparing to join the Wardens of Solance.
 
-"An attack on a remote elven village? Damn orcs..."
+:: gr 
+The wind carried with it the howls of life being torn asunder by powers far greater than any mortal could fathom. Tonight was supposed to be special for <color=red>Samra</color>. Assigned her first mission after spending the last decade honing her talents, sharpening her mind, preparing to join the Wardens of Solance.
 
-The woeful wail of a child snaps Samra's focus away from questions and into action. Following a trail of the echo, Samra rushes onward until she comes upon the source. A young elven girl. Looming above her, a tall orc whose crimson eyes flickered against the flames.
+"An attack on a remote <color=blue>elven</color> village? Damn <color=green>orcs</color>..."
 
-The orc raised his axe slow and awkwardly, almost as if it were his first time on the battlefield. Samra knew better. She knew when to act, and how. Samra launches herself towards the young elf and pushes her out of the way, intercepting the inept blow from the orc with her organic metal arm.
+The woeful wail of a child snaps <color=red>Samra's</color> focus away from questions and into action. Following a trail of the echo, <color=red>Samra</color> rushes onward until she comes upon the source. A young <color=blue>elven</color> girl. Looming above her, a tall <color=green>orc</color> whose crimson eyes flickered against the flames.
+
+The <color=green>orc</color> raised his axe slow and awkwardly, almost as if it were his first time on the battlefield. <color=red>Samra</color> knew better. She knew when to act, and how. <color=red>Samra</color> launches herself towards the young <color=blue>elf</color> and pushes her out of the way, intercepting the inept blow from the <color=green>orc</color> with her organic metal arm.
 
 [[br dwarf route]]
 [[bg orc route]]
 [[gr dwarf route]]
 
 :: br elf route [END]
-Without a moment's hesitation, Samra charged towards the orc, her own sword raised high. The orc turned to face her, but it was too late. Samra's blade sliced through the air and cut the orc down in the nick of time. She rushed to Eira's side and embraced her.
+Without a moment's hesitation <color=red>Samra</color> charged towards the <color=green>orc</color>, her own sword raised high. The <color=green>orc</color> turned to face her, but it was too late. <color=red>Samra's</color> blade sliced through the air and cut the <color=green>orc</color> down in the nick of time. She rushed to <color=blue>Eira's</color> side and embraced her.
 
-Breathless and shaking, Eira pointed at the house. Samra knew what she had to do. She rushed towards the burning house and began to dig through the rubble, trying to find Eira's mother. But the flames were too intense, and the heat was overwhelming. Samra could feel her skin blistering, and her eyes watering with smoke.
+Breathless and shaking, <color=blue>Eira</color> pointed at the house. <color=red>Samra</color> knew what she had to do. She rushed towards the burning house and began to dig through the rubble, trying to find <color=blue>Eira's</color> mother. But the flames were too intense, and the heat was overwhelming. <color=red>Samra</color> could feel her skin blistering, and her eyes watering with smoke.
 
-As she dug, Samra heard a weak voice calling out to her. It was Eira's mother, still alive, but trapped under the rubble. "Take Eira and run," she whispered. "Save my daughter."
+As she dug, <color=red>Samra</color> heard a weak voice calling out to her. It was <color=blue>Eira's</color> mother, still alive, but trapped under the rubble. "Take <color=blue>Eira</color> and run," she whispered. "Save my daughter."
 
-Samra hesitated for a moment, torn between her duty to fight and her desire to help Eira's mother. But when she looked into the woman's eyes, she saw the determination and love there, and she knew what she had to do.
+<color=red>Samra</color> hesitated for a moment, torn between her duty to fight and her desire to help <color=blue>Eira's</color> mother. But when she looked into the woman's eyes, she saw the determination and love there, and she knew what she had to do.
 
-With tears in her eyes, Samra lifted Eira onto her shoulders and sprinted away from the burning house, as fast as she could. Behind her, she could hear the sounds of battle still raging, but all she cared about was keeping Eira safe.
+With tears in her eyes, <color=red>Samra</color> lifted <color=blue>Eira</color> onto her shoulders and sprinted away from the burning house, as fast as she could. Behind her, she could hear the sounds of battle still raging, but all she cared about was keeping <color=blue>Eira</color> safe.
+
 [[x]]
-
 
 :: bg elf route [END]
-As she approached, she saw an orc with a sword raised above Eira's head, ready to strike.
+As she approached, she saw an <color=green>orc</color> with a sword raised above <color=blue>Eira's</color> head, ready to strike.
 
-Samra drew her own sword and prepared to defend the child, but before she could take action, she saw another orc, Kolrik, leap forward and attack the orc who had threatened Eira. The orc fell to the ground, dead, and Kolrik stood there in shock of what he had just done.
+<color=red>Samra</color> drew her own sword and prepared to defend the child, but before she could take action, she saw another <color=green>orc</color>, <color=green>Kolrik</color>, leap forward and attack the <color=green>orc</color> who had threatened <color=blue>Eira</color>. The <color=green>orc</color> fell to the ground, dead, and <color=green>Kolrik</color> stood there in shock of what he had just done.
 
-Seeing an opportunity to escape, Kolrik grabbed Eira and ran away from the battlefield. Samra tried to follow them, but was intercepted by another orc, who engaged her in combat.
+Seeing an opportunity to escape, <color=green>Kolrik</color> grabbed <color=blue>Eira</color> and ran away from the battlefield. <color=red>Samra</color> tried to follow them, but was intercepted by another <color=green>orc</color>, who engaged her in combat.
 
-As Samra fought for her life, she couldn't help but think about the orc who had saved Eira. She had always believed that orcs were nothing more than brutal savages, but Kolrik's actions had shown her that there was more to them than meets the eye.
+As <color=red>Samra</color> fought for her life, she couldn't help but think about the <color=green>orc</color> who had saved <color=blue>Eira</color>. She had always believed that <color=green>orcs</color> were nothing more than brutal savages, but <color=green>Kolrik's</color> actions had shown her that there was more to them than meets the eye.
+
 [[x]]
-
 
 :: gr elf route [END]
-Kolrik stormed the elven village with ferocious fervour. Channelling the unique gifts bestowed through his bloodline, he drums up  reserves of primal fury, flinging himself at groups of frantic elves, his axe ripping and tearing through them swiftly.
+<color=green>Kolrik</color> stormed the <color=blue>elven</color> village with ferocious fervour. Channelling the unique gifts bestowed through his bloodline, he drums up  reserves of primal fury, flinging himself at groups of frantic <color=blue>elves</color>, his axe ripping and tearing through them swiftly.
 
-"The elves will pay for their weakness, their incessant thirst for power will be eliminated."
+"The <color=blue>elves</color> will pay for their weakness, their incessant thirst for power will be eliminated."
 
-Kolrik kept speaking to himself. Reminding himself of why he must punish the elves. Why magic would only plunge Solance further into chaos.
+<color=blue>Kolrik</color> kept speaking to himself. Reminding himself of why he must punish the <color=blue>elves</color>. Why magic would only plunge Solance further into chaos.
 
-Kolrik's movements gradually raised in intensity as a gathering storm of blades and zealous, superhuman rage.
+<color=green>Kolrik's</color> movements gradually raised in intensity as a gathering storm of blades and zealous, superhuman rage.
 
-Overwhelmed by his rage, Kolrik was a slave to his impulses. He continued to hack and cleave at anyone or anything that reached his proximity.
+Overwhelmed by his rage, <color=green>Kolrik</color> was a slave to his impulses. He continued to hack and cleave at anyone or anything that reached his proximity.
 
-A boulder sized chunk of metal tore up through the earth and spiralled at blistering speed towards Kolrik, smashing him in the chest and hurtling him to the ground.
+A boulder sized chunk of metal tore up through the earth and spiralled at blistering speed towards <color=green>Kolrik</color>, smashing him in the chest and hurtling him to the ground.
 
-"Heathen! Mindless mongrel!" Samra charged towards the downed Kolrik. "Have you no honour, fiendish orc?!"
+"Heathen! Mindless mongrel!" <color=red>Samra</color> charged towards the downed <color=green>Kolrik</color>. "Have you no honour, fiendish <color=green>orc</color>?!"
 
-Samra's heart was racing and her voice shaky as she took in the scene of mindless carnage, and the unharmed, dazed orc.
+<color=red>Samra's</color> heart was racing and her voice shaky as she took in the scene of mindless carnage, and the unharmed, dazed <color=green>orc</color>.
 
-The wails of agony, war cries and crackling of burning houses were all that remained as Kolrik rose to his feet, standing motionless. The blood of elves drenching his weapon and body. His uncontrollable rage receding, the cacophony of war finally reaches Kolrik's senses. He glanced down at his blood-soaked hands, as he stares at them, his eye is caught by the sight of a torn and tattered stuffed bear, stained with dirt and blood.
-Kolrik's hands begin to shiver and shake as realization of the horrible mistake he has made dawns upon him.
+The wails of agony, war cries and crackling of burning houses were all that remained as <color=green>Kolrik</color> rose to his feet, standing motionless. The blood of <color=blue>elves</color> drenching his weapon and body. His uncontrollable rage receding, the cacophony of war finally reaches <color=green>Kolrik's</color> senses. He glanced down at his blood-soaked hands, as he stares at them, his eye is caught by the sight of a torn and tattered stuffed bear, stained with dirt and blood.
+<color=green>Kolrik's</color> hands begin to shiver and shake as realization of the horrible mistake he has made dawns upon him.
 
-As Kolrik's gaze slowly meets Samra's, his lips quiver as he struggles to speak.
+As <color=green>Kolrik's</color> gaze slowly meets <color=red>Samra's</color>, his lips quiver as he struggles to speak.
 
-Samra howls as she infuses her metal arm with earthen magics and drives her jagged claw into Kolrik's chest. The orc sputters blood from his mouth as he grips Samra's wrist. He stares into her eyes, as a final tear falls down his blood caked face.
+<color=red>Samra</color> howls as she infuses her metal arm with earthen magics and drives her jagged claw into <color=green>Kolrik's</color> chest. The <color=green>orc</color> sputters blood from his mouth as he grips <color=red>Samra's</color> wrist. He stares into her eyes, as a final tear falls down his blood caked face.
+
 [[x]]
 
-:: br orc route
-[[gr orc route]]
+:: gr orc route
+<color=green>Kolrik</color> hesitated, the sight of the child momentarily staying his hand. He had never killed a child before, and the innocence in the <color=blue>elf's</color> eyes made him pause. In that moment of hesitation, a <color=red>dwarf</color> woman named <color=red>Samra</color> appeared out of nowhere, launching a fierce attack on <color=green>Kilrok</color>.
 
-:: bg orc route
-In the midst of his confusion, he had a sudden flashback to his childhood. He remembered the day when a group of elves had attacked his village, slaughtering everyone in sight. He had watched as his family and friends were cut down, and he had felt a seething anger and desire for revenge that had stayed with him ever since.
+<color=green>Kolrik</color> was caught off guard and stumbled backward, but he quickly regained his footing and turned to face his attacker. <color=red>Samra</color> was smaller than him, but she was quick and nimble. She darted around him, striking him with her axe at every opportunity.
 
-He was attacking defenseless people and causing destruction without reason. He realized that he had become the very thing that he had sworn to destroy.
+<color=green>Kolrik</color> was a seasoned warrior, and he knew he could not let his guard down. He swung his axe with ferocity, but <color=red>Samra</color> dodged and weaved, always managing to stay just out of reach.
 
-As he approached the child, one of his orc friends, Grok, appeared behind him. "What are you doing, Kolrik?" he growled. "We have orders to kill everyone in this village, including the young."
+The <color=blue>elf</color> child, meanwhile, had found her feet and was running away as fast as she could. <color=green>Kilrok</color> couldn't help but feel a twinge of guilt as he watched her go.
 
-Kolrik was frozen, not knowing what to do. He knew that he could not harm an innocent child, but he also knew that defying his orders would have dire consequences.
-
-Grok sneered at Kolrik. "Don't worry, I'll take care of the child for you," he said, reaching for his sword.
-
-[[br orc route b]]
-[[bg orc route b]]
-[[gr orc route b]]
-
-:: gr orc route 
-Kolrik hesitated, the sight of the child momentarily staying his hand. He had never killed a child before, and the innocence in the elf's eyes made him pause. In that moment of hesitation, a dwarf woman named Samra appeared out of nowhere, launching a fierce attack on Kilrok.
-
-Kolrik was caught off guard and stumbled backward, but he quickly regained his footing and turned to face his attacker. Samra was smaller than him, but she was quick and nimble. She darted around him, striking him with her axe at every opportunity.
-
-Kolrik was a seasoned warrior, and he knew he could not let his guard down. He swung his axe with ferocity, but Samra dodged and weaved, always managing to stay just out of reach.
-
-The elf child, meanwhile, had found her feet and was running away as fast as she could. Kilrok couldn't help but feel a twinge of guilt as he watched her go.
 
 [[br orc end]]
 [[bg orc route a]]
 [[gr dwarf route 2]]
 
+:: bg orc route 
+In the midst of his confusion, he had a sudden flashback to his childhood. He remembered the day when a group of <color=blue>elves</color> had attacked his village, slaughtering everyone in sight. He had watched as his family and friends were cut down, and he had felt a seething anger and desire for revenge that had stayed with him ever since.
+
+He was attacking defenseless people and causing destruction without reason. He realized that he had become the very thing that he had sworn to destroy.
+
+As he approached the child, one of his <color=green>orc</color> friends, <color=green>Grok</color>, appeared behind him. "What are you doing, <color=green>Kolrik</color>?" he growled. "We have orders to kill everyone in this village, including the young."
+
+<color=green>Kolrik</color> was frozen, not knowing what to do. He knew that he could not harm an innocent child, but he also knew that defying his orders would have dire consequences.
+
+<color=green>Grok</color> sneered at <color=green>Kolrik</color>. "Don't worry, I'll take care of the child for you," he said, reaching for his sword.
+
+[[br orc route b]]
+[[bg orc route b]]
+[[gr orc route b]]
+
+
 
 :: br dwarf route [END]
-Samra stood her ground, determined to protect Eira from harm. As Kolrik swung his axe down, Samra lifted her shield, blocking the attack with a resounding clang. The force of the blow pushed Samra back, but she remained standing, shield raised and ready for the next attack.
+<color=red>Samra</color> stood her ground, determined to protect <color=blue>Eira</color> from harm. As <color=green>Kolrik</color> swung his axe down, <color=red>Samra</color> lifted her shield, blocking the attack with a resounding clang. The force of the blow pushed <color=red>Samra</color> back, but she remained standing, shield raised and ready for the next attack.
 
-Kolrik, sensing the danger, drew back his axe to strike again. This time, Samra acted quickly. She focused her energy and channeled her earth magic, causing the ground beneath Kolrik to tremble and quake. The orc stumbled, momentarily blinded by a flurry of dirt and debris. Samra used this momentary distraction to grab Eira and run towards safety.
+<color=green>Kolrik</color>, sensing the danger, drew back his axe to strike again. This time, <color=red>Samra</color> acted quickly. She focused her energy and channeled her earth magic, causing the ground beneath <color=green>Kolrik</color> to tremble and quake. The <color=green>orc</color> stumbled, momentarily blinded by a flurry of dirt and debris. <color=red>Samra</color> used this momentary distraction to grab <color=blue>Eira</color> and run towards safety.
 [[x]]
 
+
 :: gr dwarf route
-As Samra faces off against Kolrik, she realizes that Eira is in danger and needs to get away. She turns to the young elf girl and shouts, "Eira, run! Run as fast as you can and don't look back!" She hopes that the child will heed her words and make it to safety.
+As <color=red>Samra</color> faces off against <color=green>Kolrik</color>, she realizes that <color=blue>Eira</color> is in danger and needs to get away. She turns to the young <color=blue>elf</color> girl and shouts, "<color=blue>Eira</color>, run! Run as fast as you can and don't look back!" She hopes that the child will heed her words and make it to safety.
 
-With Samra holding off Kolrik's attacks, Eira takes the opportunity to escape. She turns and runs as fast as she can, her heart pounding with fear and adrenaline. She can hear the sounds of battle behind her, but she doesn't dare look back, knowing that she needs to keep moving and find help.
+With <color=red>Samra</color> holding off <color=green>Kolrik's</color> attacks, <color=blue>Eira</color> takes the opportunity to escape. She turns and runs as fast as she can, her heart pounding with fear and adrenaline. She can hear the sounds of battle behind her, but she doesn't dare look back, knowing that she needs to keep moving and find help.
 
-As Samra and Kolrik clash in battle, Samra remembers the days when they were friends, before Kolrik became consumed with anger and violence. In between exchanging blows, she tries to reason with him, calling out to him by name and urging him to remember the good in him. "Kolrik, this isn't you! You're better than this!" she pleads.
+As <color=red>Samra</color> and <color=green>Kolrik</color> clash in battle, <color=red>Samra</color> remembers the days when they were friends, before <color=green>Kolrik</color> became consumed with anger and violence. In between exchanging blows, she tries to reason with him, calling out to him by name and urging him to remember the good in him. "<color=green>Kolrik</color>, this isn't you! You're better than this!" she pleads.
 
 [[br dwarf route]]
 [[gr dwarf route 2]]
 
 
-:: br orc route b
-[[bg orc route b]]
+:: br orc route b 
+[[bg orc route b]] 
 
+:: bg orc route b [END]
+<color=green>Kolrik</color> was shaken to his core. He had always thought of himself as a warrior with a strong sense of honor, but he now saw that his actions were driven by hatred and anger, rather than any noble ideal.
 
-:: bg orc route b
-Kolrik was shaken to his core. He had always thought of himself as a warrior with a strong sense of honor, but he now saw that his actions were driven by hatred and anger, rather than any noble ideal.
+<color=green>Kolrik</color> felt a surge of anger and defiance. He couldn't stand by and watch his friend kill an innocent child. Without hesitation, <color=green>Kolrik</color> drew his own axe and lunged at <color=green>Grok</color>, catching him off guard.
 
-Kolrik felt a surge of anger and defiance. He couldn't stand by and watch his friend kill an innocent child. Without hesitation, Kolrik drew his own axe and lunged at Grok, catching him off guard.
+It was a quick death, but for <color=green>Kilrok</color>, it felt like an eternity. With a heavy heart fueled by fear, <color=green>Kolrik</color> picked up the child and fled the burning village, leaving his former life behind. <color=red>Samra</color> watched as the whole thing unfolded.
 
-It was a quick death, but for Kilrok, it felt like an eternity. With a heavy heart fueled by fear, Kolrik picked up the child and fled the burning village, leaving his former life behind. Samra watched as the whole thing unfolded.
-
-As Kolrik ran, holding the child close, he knew that his decision would have consequences, but he also knew that he had chosen the path of honor and compassion.
+As <color=green>Kolrik</color> ran, holding the child close, he knew that his decision would have consequences, but he also knew that he had chosen the path of honor and compassion.
 
 [[br act 1 end]]
 
 
 :: gr orc route b [END]
-Kolrik hesitated for a moment before stepping aside, allowing Grok to approach Eira with his weapon drawn.
+<color=green>Kolrik</color> hesitated for a moment before stepping aside, allowing <color=green>Grok</color> to approach <color=blue>Eira</color> with his weapon drawn.
 
-Just as Grok was about to strike, Samra appeared out of nowhere, her sword flashing in the sunlight. She charged at Grok, knocking his weapon out of his hand before delivering a fatal blow. Kolrik was stunned as he watched his friend fall to the ground, but before he could react, Samra turned her attention to him.
+Just as <color=green>Grok</color> was about to strike, <color=red>Samra</color> appeared out of nowhere, her sword flashing in the sunlight. She charged at <color=green>Grok</color>, knocking his weapon out of his hand before delivering a fatal blow. <color=green>Kolrik</color> was stunned as he watched his friend fall to the ground, but before he could react, <color=red>Samra</color> turned her attention to him.
 
-Samra was a powerful earth mage, and she used her magic to conjure up a cloud of dust and dirt that swirled around Kolrik, blinding him. She then scooped up Eira, cradling the child in her arms before running off into the forest.
+<color=red>Samra</color> was a powerful earth mage, and she used her magic to conjure up a cloud of dust and dirt that swirled around <color=green>Kolrik</color>, blinding him. She then scooped up <color=blue>Eira</color>, cradling the child in her arms before running off into the forest.
 [[x]]
 
 
@@ -222,56 +225,56 @@ And with that, he turned and ran towards the forest where Eira fled to, leaving 
 
 
 :: gr dwarf route 2 [END]
-As they ran, Eira's sobs turned to hiccups, and Samra knew that she had done the right thing. She looked back at the burning village, feeling the weight of the loss of lives and homes, but also the weight of the gratefulness of one little elf girl's mother.
+As they ran, <color=blue>Eira's</color> sobs turned to hiccups, and <color=red>Samra</color> knew that she had done the right thing. She looked back at the burning village, feeling the weight of the loss of lives and homes, but also the weight of the gratefulness of one little <color=blue>elf</color> girl's mother.
 
-The clang of metal against metal filled the air as Samra and Kolrik clashed in the middle of the battlefield. Samra's metal arm glinted in the sunlight as she parried Kolrik's sword strikes.
+The clang of metal against metal filled the air as <color=red>Samra</color> and <color=green>Kolrik</color> clashed in the middle of the battlefield. <color=red>Samra's</color> metal arm glinted in the sunlight as she parried <color=green>Kolrik's</color> sword strikes.
 
-"I should’ve known this is who you are..." Samra yelled over the din of battle. "You never changed. You swore to me you’d lead a better life, is this what you meant Kolrik? Slaughtering innocents?!"
+"I should’ve known this is who you are..." <color=red>Samra</color> yelled over the din of battle. "You never changed. You swore to me you’d lead a better life, is this what you meant <color=green>Kolrik</color>? Slaughtering innocents?!"
 
-Kolrik sneered as he launched another attack. "You're the one who's always trying to play the hero, Samra. What could you know about me?! You don’t understand the damndest thing about the things I had to go through!"
+<color=green>Kolrik</color> sneered as he launched another attack. "You're the one who's always trying to play the hero, <color=red>Samra</color>. What could you know about me?! You don’t understand the damndest thing about the things I had to go through!"
 
-Samra gritted her teeth as she dodged another blow. "I'm not trying to be a hero. I'm just trying to save an innocent child."
+<color=red>Samra</color> gritted her teeth as she dodged another blow. "I'm not trying to be a hero. I'm just trying to save an innocent child."
 
-Kolrik's raised an eyebrow in confusion. "That child?"
+<color=green>Kolrik's</color> raised an eyebrow in confusion. "That child?"
 
-Kolrik looked surprised for a moment, but then his expression hardened again. "You should have told me that from the start. Stop attacking me, I'm not trying to hurt her!"
+<color=green>Kolrik</color> looked surprised for a moment, but then his expression hardened again. "You should have told me that from the start. Stop attacking me, I'm not trying to hurt her!"
 
-Samra hesitated for a moment, but then she lunged forward again. "Hah! You expect me to believe that Kolrik? I won’t stop... I can’t stop. Not until I know that Eira is safe."
+<color=red>Samra</color> hesitated for a moment, but then she lunged forward again. "Hah! You expect me to believe that <color=green>Kolrik</color>? I won’t stop... I can’t stop. Not until I know that <color=blue>Eira</color> is safe."
 
-Kolrik’s blood slowly begins to boil as the more they fight, the more danger Eira is exposed to. "Then cease this! She needs you! She’s in danger now because of your recklessness!"
+<color=green>Kolrik’s</color> blood slowly begins to boil as the more they fight, the more danger <color=blue>Eira</color> is exposed to. "Then cease this! She needs you! She’s in danger now because of your recklessness!"
 
-Samra’s expression stiffins as she makes her hostility clear. "You heard what I said the first time."
+<color=red>Samra’s</color> expression stiffins as she makes her hostility clear. "You heard what I said the first time."
 
-The two combatants continued to spar back and forth, neither gaining the upper hand. But then Kolrik's anger seemed to reach a boiling point. He swung his sword with such force that it shattered Samra's metal arm.
+The two combatants continued to spar back and forth, neither gaining the upper hand. But then <color=green>Kolrik's</color> anger seemed to reach a boiling point. He swung his sword with such force that it shattered <color=red>Samra's</color> metal arm.
 
-Samra cried out in pain and fell to her knees. Kolrik stood over her, breathing heavily, his sword pointed at her throat. "You should have listened to me, Samra," he growled. Samra looked up at him, her eyes flashing with defiance. "You're not going to kill me, Kolrik. You can’t."
+<color=red>Samra</color> cried out in pain and fell to her knees. <color=green>Kolrik</color> stood over her, breathing heavily, his sword pointed at her throat. "You should have listened to me, <color=red>Samra</color>," he growled. <color=red>Samra</color> looked up at him, her eyes flashing with defiance. "You're not going to kill me, <color=green>Kolrik</color>. You can’t."
 
-Kolrik hesitated for a moment, but then he seemed to come to a decision. "Maybe not today," he said, lowering his sword. "But this isn't over between us. Remember that."
+<color=green>Kolrik</color> hesitated for a moment, but then he seemed to come to a decision. "Maybe not today," he said, lowering his sword. "But this isn't over between us. Remember that."
 
-And with that, he turned and ran towards the forest where Eira fled to, leaving Samra to tend to her wounds and reflect on the history between them.
+And with that, he turned and ran towards the forest where <color=blue>Eira</color> fled to, leaving <color=red>Samra</color> to tend to her wounds and reflect on the history between them.
 [[x]]
 
 
 :: br act 1 end [END]
 A few hours later...
 
-They eventually came to a stop in a clearing, and Kolrik sat down on a log, Eira still sleeping soundly in his arms.
+They eventually came to a stop in a clearing, and <color=green>Kolrik</color> sat down on a log, <color=blue>Eira</color> still sleeping soundly in his arms.
 
-As he sat there, lost in thought, he suddenly became aware of someone approaching. It was Samra, her sword drawn and her expression one of fierce determination. Kolrik didn't move, his eyes meeting hers as she came to a stop a few feet away.
+As he sat there, lost in thought, he suddenly became aware of someone approaching. It was <color=red>Samra</color>, her sword drawn and her expression one of fierce determination. <color=green>Kolrik</color> didn't move, his eyes meeting hers as she came to a stop a few feet away.
 
-"What have you done?" Samra demanded, her voice cold and angry. "You've killed your own kind? Don't you know what that means?!"
+"What have you done?" <color=red>Samra</color> demanded, her voice cold and angry. "You've killed your own kind? Don't you know what that means?!"
 
-Kolrik didn't answer, instead choosing to continue sitting on the log, holding Eira protectively. "Take her away," he said finally, his voice barely above a whisper.
+<color=green>Kolrik</color> didn't answer, instead choosing to continue sitting on the log, holding <color=blue>Eira</color> protectively. "Take her away," he said finally, his voice barely above a whisper.
 
-Samra hesitated for a moment before sheathing her sword and approaching Kolrik. They talked for a few minutes, discussing their pasts and what the future might hold. Kolrik knew that his fate was sealed, and he resigned himself to his punishment.
+<color=red>Samra</color> hesitated for a moment before sheathing her sword and approaching <color=green>Kolrik</color>. They talked for a few minutes, discussing their pasts and what the future might hold. <color=green>Kolrik</color> knew that his fate was sealed, and he resigned himself to his punishment.
 
 "You know exactly what's going to happen to me," he said finally. "I've made my choice."
 
-Samra nodded in understanding before turning her attention to Eira. "What about her?"
+<color=red>Samra</color> nodded in understanding before turning her attention to <color=blue>Eira</color>. "What about her?"
 
-Kolrik hesitated for a moment before speaking. "Take care of her," he said softly. "Make sure she's safe."
+<color=green>Kolrik</color> hesitated for a moment before speaking. "Take care of her," he said softly. "Make sure she's safe."
 
-With that, Samra took Eira and disappeared into the forest. Kolrik sat there for a while longer, lost in thought. When he finally stood up and began to walk away, he knew that his life would never be the same.
+With that, <color=red>Samra</color> took <color=blue>Eira</color> and disappeared into the forest. <color=green>Kolrik</color> sat there for a while longer, lost in thought. When he finally stood up and began to walk away, he knew that his life would never be the same.
 
-A few hours passed, and Eira slept soundly in the makeshift bed that Samra had set up for her. When she woke up the next morning, she found herself in a soft bed within the Dwarf noble residence. It was a stark contrast to the cold and dangerous world she had known before, and for the first time in her young life, she felt safe.
+A few hours passed, and <color=blue>Eira</color> slept soundly in the makeshift bed that <color=blue>Samra</color> had set up for her. When she woke up the next morning, she found herself in a soft bed within the <color=red>Dwarf</color> noble residence. It was a stark contrast to the cold and dangerous world she had known before, and for the first time in her young life, she felt safe.
 [[x]]
