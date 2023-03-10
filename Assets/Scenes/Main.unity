@@ -9671,7 +9671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb95ec91875b1d419d1d0f8bcfb1ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  twineText: {fileID: 4900000, guid: eb80946a49f302e4a859ea9292e1d46d, type: 3}
+  twineText: {fileID: 4900000, guid: e27121c3cc85e92479e284c69a440540, type: 3}
 --- !u!4 &1879017901
 Transform:
   m_ObjectHideFlags: 0
