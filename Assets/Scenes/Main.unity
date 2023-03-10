@@ -281,12 +281,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.6
+  m_fontSize: 8.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 5
-  m_fontSizeMax: 10.75
+  m_fontSizeMin: 0
+  m_fontSizeMax: 8.55
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -996,7 +996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &284353510
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3225,6 +3225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2da38cb5d4b52341811be349b556f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imgThing: {fileID: 284353509}
   parentOfResponses: {fileID: 1759703564}
   prefab_btnResponse: {fileID: 3058503858942907255, guid: f1fc40f1a86dd3e4089a47aac2325722, type: 3}
   txtMessage: {fileID: 522527384}

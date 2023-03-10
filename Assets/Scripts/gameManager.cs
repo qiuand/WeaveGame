@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class gameManager : MonoBehaviour
 {
+    gameManager diagView;
+    public static bool gameLock = false;
+    public static bool gameEnd = false;
     public Sprite i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, i11, i12, i13, i14, i15;
     public GameObject exposit;
     public Sprite brImg, bgImg, grImg;
@@ -91,9 +94,10 @@ public class gameManager : MonoBehaviour
             exposit.SetActive(false);
             if (!completeTrigger)
             {
+                storyImg.SetActive(true);
                 switch (triggerType)
                 {
-                    case "br":
+                    case "gr":
                         diagCon.GetComponent<DialogueViewer>().OnNodeSelected(0);
                         newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = diagText.GetComponent<TMPro.TextMeshProUGUI>().text+"<br><color=green>Press Space to Continue";
                         break;
@@ -101,7 +105,7 @@ public class gameManager : MonoBehaviour
                         diagCon.GetComponent<DialogueViewer>().OnNodeSelected(1);
                         newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = diagText.GetComponent<TMPro.TextMeshProUGUI>().text + "<br><color=green>Press Space to Continue";
                         break;
-                    case "gr":
+                    case "br":
                         diagCon.GetComponent<DialogueViewer>().OnNodeSelected(2);
                         newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = diagText.GetComponent<TMPro.TextMeshProUGUI>().text + "<br><color=green>Press Space to Continue";
                         break;
@@ -117,13 +121,26 @@ public class gameManager : MonoBehaviour
             }
             levelIncrement++;
             if (Input.GetKeyDown(KeyCode.Space)){
-                StartCoroutine(cam.GetComponent<camControl>().CamLerp());
-                went = 0;
-                isCamDone = false;
-                recentCamera = true;
-                src.PlayOneShot(ding);
+                if (gameEnd)
+                {
+                    gameEnd = false;
+                    SceneManager.LoadScene("Main");
+                }
+                if (gameLock)
+                {
+                    diagCon.GetComponent<DialogueViewer>().OnNodeSelected(0);
+                    newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = diagText.GetComponent<TMPro.TextMeshProUGUI>().text + "<br><color=green>Press Space to Continue";
+                }
+                else
+                {
+                    StartCoroutine(cam.GetComponent<camControl>().CamLerp());
+                    went = 0;
+                    isCamDone = false;
+                    recentCamera = true;
+                    src.PlayOneShot(ding);
 
-                triggerType = "";
+                    triggerType = "";
+                }
             }
             
         }

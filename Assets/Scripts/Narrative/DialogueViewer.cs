@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using TMPro;
 public class DialogueViewer : MonoBehaviour
 {
+    public GameObject imgThing;
     [SerializeField] Transform parentOfResponses;
     [SerializeField] Button prefab_btnResponse;
     //[SerializeField] SlowTyper txtMessage;
@@ -47,8 +48,12 @@ public class DialogueViewer : MonoBehaviour
         controller.ChooseResponse(indexChosen);
     }
 
-    private void OnNodeEntered(Node newNode)
+    public void OnNodeEntered(Node newNode)
     {
+        if(newNode.title=="bg orc route b")
+        {
+            gameManager.gameLock = true;
+        }
         Debug.Log("Entering Node: " + newNode.title);
 
         KillAllChildren(parentOfResponses);
@@ -64,20 +69,32 @@ public class DialogueViewer : MonoBehaviour
             txtMessage.text = response.messageText;
             Debug.Log("DisplayText[" + response.displayText + "]");
             responceButton.onClick.AddListener(delegate { OnNodeSelected(currentChoiceIndex); });
-        }
 
-            UnityAction showMemoryAfterTitle = delegate {
-            Debug.Log("Showing: " + newNode.title + ".jpg");
-            Texture2D memoryTexture = Resources.Load<Texture2D>(newNode.title);
-            Sprite memoryImage = Texture2DToSprite(memoryTexture);
-            imgMemory.sprite = memoryImage;
+            Debug.Log("Showing: " + newNode.title + ".png");
+            Sprite memoryImage = Resources.Load<Sprite>(newNode.title);
+            /*            Sprite memoryImage = Texture2DToSprite(memoryTexture);*/
             //imgMemory.GetComponent<Oscillate>().Begin();
             //ShowContinueButton(typeMessageAfterTitle);
             //txtMessage.Clear();
+            imgThing.GetComponent<Image>().sprite = memoryImage;
+        }
+        Debug.Log("Showmemory");
+
+        UnityAction showMemoryAfterTitle = delegate
+        {
+
         };
+        if (newNode.tags.Contains("END"))
+        {
+            gameManager.gameEnd = true;
+
+        }
     }
 
-    public static Sprite Texture2DToSprite( Texture2D t ) {
-        return Sprite.Create( t, new Rect( 0, 0, t.width, t.height ), new Vector2( 0.5f, 0.5f ) );
+    public static Sprite Texture2DToSprite(Texture2D t)
+    {
+        return Sprite.Create(t, new Rect(0, 0, t.width, t.height), new Vector2(0.5f, 0.5f));
     }
+
+
 }
