@@ -9,6 +9,8 @@ using System.Runtime.InteropServices;
 using TMPro;
 public class DialogueViewer : MonoBehaviour
 {
+    public GameObject ending1;
+    public GameObject ending2;
     public GameObject imgThing;
     [SerializeField] Transform parentOfResponses;
     [SerializeField] Button prefab_btnResponse;
@@ -53,6 +55,14 @@ public class DialogueViewer : MonoBehaviour
         if(newNode.title=="bg orc route b")
         {
             gameManager.gameLock = true;
+        }
+        else if (newNode.title=="gr elf route")
+        {
+            ending2.SetActive(true);
+        }
+        else if (newNode.title=="br act 1 end")
+        {
+            ending1.SetActive(true);
         }
         Debug.Log("Entering Node: " + newNode.title);
 
