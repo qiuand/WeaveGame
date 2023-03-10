@@ -128,7 +128,7 @@ As he approached the child, one of his <color=green>orc</color> friends, <color=
 
 <color=green>Grok</color> sneered at <color=green>Kolrik</color>. "Don't worry, I'll take care of the child for you," he said, reaching for his sword.
 
-[[br orc route b]]
+[[gr orc route b]]
 [[bg orc route b]]
 [[gr orc route b]]
 
@@ -151,9 +151,6 @@ As <color=red>Samra</color> and <color=green>Kolrik</color> clash in battle, <co
 [[br dwarf route]]
 [[gr dwarf route 2]]
 
-
-:: br orc route b 
-[[bg orc route b]] 
 
 :: bg orc route b [END]
 <color=green>Kolrik</color> was shaken to his core. He had always thought of himself as a warrior with a strong sense of honor, but he now saw that his actions were driven by hatred and anger, rather than any noble ideal.
