@@ -3352,8 +3352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2da38cb5d4b52341811be349b556f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ending1: {fileID: 0}
-  ending2: {fileID: 0}
+  ending1: {fileID: 1914536730}
+  ending2: {fileID: 1049434290}
   imgThing: {fileID: 284353509}
   parentOfResponses: {fileID: 1759703564}
   prefab_btnResponse: {fileID: 3058503858942907255, guid: f1fc40f1a86dd3e4089a47aac2325722, type: 3}

@@ -128,6 +128,7 @@ public class gameManager : MonoBehaviour
                 }
                 if (gameLock)
                 {
+                    gameLock = false;
                     diagCon.GetComponent<DialogueViewer>().OnNodeSelected(0);
                     newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = diagText.GetComponent<TMPro.TextMeshProUGUI>().text + "<br><color=green>Press Space to Continue";
                 }
