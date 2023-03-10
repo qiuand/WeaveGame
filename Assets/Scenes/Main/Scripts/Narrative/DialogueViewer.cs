@@ -83,21 +83,11 @@ public class DialogueViewer : MonoBehaviour
 
     void CallImageByIndex(int index)
     {
-        //Green&Red
         if (index == 0)
         {
 
         }
-        //Blue&Green
         else if (index == 1)
-        {
-
-        }
-        //Red&Blue
-        else if (index == 2)
-        {
-
-        }
 
 
     }
