@@ -33,7 +33,7 @@ Among the rampaging orcs was a young warrior named Kolrik. He had been trained s
 
 He knew what he had to do, but Kolrik stood frozen. Torn between the loyalty to his army and his own sense of morality, he didn't know what to do...
 
-[[br orc route]]
+[[gr orc route]]
 [[bg orc route]]
 [[gr orc route]]
 
@@ -117,7 +117,7 @@ Grok sneered at Kolrik. "Don't worry, I'll take care of the child for you," he s
 [[bg orc route b]]
 [[gr orc route b]]
 
-:: gr orc route 
+:: gr orc route
 Kolrik hesitated, the sight of the child momentarily staying his hand. He had never killed a child before, and the innocence in the elf's eyes made him pause. In that moment of hesitation, a dwarf woman named Samra appeared out of nowhere, launching a fierce attack on Kilrok.
 
 Kolrik was caught off guard and stumbled backward, but he quickly regained his footing and turned to face his attacker. Samra was smaller than him, but she was quick and nimble. She darted around him, striking him with her axe at every opportunity.

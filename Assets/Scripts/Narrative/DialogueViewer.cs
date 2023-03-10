@@ -52,6 +52,7 @@ public class DialogueViewer : MonoBehaviour
 
     public void OnNodeEntered(Node newNode)
     {
+        print(newNode.title);
         if(newNode.title=="bg orc route b")
         {
             gameManager.gameLock = true;
