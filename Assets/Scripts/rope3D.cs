@@ -103,7 +103,7 @@ public class rope3D : MonoBehaviour
             if ((collidee.tag == "Green" && collision.gameObject.tag == "Blue") || (collidee.tag == "Blue" && collision.gameObject.tag == "Green"))
             {
                 HandleButton("bg");
-                gameManager.went += 2;
+                gameManager.went += 3;
                 gameManager.bg += 1f;
                 gameManager.rg -= 1f;
                 gameManager.rb -= 1f;
@@ -114,7 +114,7 @@ public class rope3D : MonoBehaviour
             else if ((collidee.tag == "Green" && collision.gameObject.tag == "Red") || (collidee.tag == "Red" && collision.gameObject.tag == "Green"))
             {
                 HandleButton("gr");
-                gameManager.went += 2;
+                gameManager.went += 3;
                 gameManager.rg += 1f;
                 gameManager.bg -= 1f;
                 gameManager.rb -= 1f;
@@ -126,7 +126,7 @@ public class rope3D : MonoBehaviour
             else if ((collidee.tag == "Blue" && collision.gameObject.tag == "Red") || (collidee.tag == "Red" && collision.gameObject.tag == "Blue"))
             {
                 HandleButton("br");
-                gameManager.went += 2;
+                gameManager.went += 3;
                 gameManager.rb += 1f;
                 gameManager.bg -= 1f;
                 gameManager.rg -= 1f;

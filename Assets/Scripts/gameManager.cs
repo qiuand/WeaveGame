@@ -5,8 +5,18 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class gameManager : MonoBehaviour
 {
+    public Sprite i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, i11, i12, i13, i14, i15;
+    public GameObject exposit;
     public Sprite brImg, bgImg, grImg;
     public GameObject storyImg;
+    AudioSource src;
+    public GameObject diagCon;
+
+    bool completeTrigger = false;
+
+    public AudioClip ding;
+
+    public GameObject containStory;
 
     public GameObject newTextie;
     public GameObject narrativeCrawl;
@@ -29,6 +39,8 @@ public class gameManager : MonoBehaviour
     public GameObject gReturn, bReturn, rReturn;
     public GameObject[] returnArray;
 
+    public GameObject diagText;
+
     public static GameObject[] oldArray;
     public static GameObject[] newArray;
     GameObject[] rArray;
@@ -40,6 +52,7 @@ public class gameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        src = GetComponent<AudioSource>();
         rArray=new GameObject[] {gReturn, bReturn, rReturn};
         bArray = new GameObject[] { greenB, blueB, redB };
         stringArray = new GameObject[] { green, blue, red };
@@ -58,7 +71,7 @@ public class gameManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("Main");
+            SceneManager.LoadScene("Select");
         }
         if (Input.GetKey(KeyCode.UpArrow))
         {
@@ -75,11 +88,44 @@ public class gameManager : MonoBehaviour
         stats.GetComponent<TMPro.TextMeshProUGUI>().text = "<color=red>Red</color>&<color=blue>Blue</color>: " + rb + "<br><color=red>Red</color>&<color=green>Green</color>: " + rg + "<br><color=blue>Blue</color>&<color=green>Green</color>: " + bg;
         if (went >= 3)
         {
+            exposit.SetActive(false);
+            if (!completeTrigger)
+            {
+                switch (triggerType)
+                {
+                    case "br":
+                        diagCon.GetComponent<DialogueViewer>().OnNodeSelected(0);
+                        newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = diagText.GetComponent<TMPro.TextMeshProUGUI>().text+"<br><color=green>Press Space to Continue";
+                        break;
+                    case "bg":
+                        diagCon.GetComponent<DialogueViewer>().OnNodeSelected(1);
+                        newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = diagText.GetComponent<TMPro.TextMeshProUGUI>().text + "<br><color=green>Press Space to Continue";
+                        break;
+                    case "gr":
+                        diagCon.GetComponent<DialogueViewer>().OnNodeSelected(2);
+                        newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = diagText.GetComponent<TMPro.TextMeshProUGUI>().text + "<br><color=green>Press Space to Continue";
+                        break;
+                }
+
+                storyImg.SetActive(true);
+                containStory.GetComponent<Animator>().Play("Thing");
+                containStory.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, containStory.transform.position.z);
+/*                storyImg.transform.position = new Vector3(cam.transform.position.x+15, cam.transform.position.y+10, newTextie.transform.position.z);
+                newTextie.transform.position = new Vector3(cam.transform.position.x+15, cam.transform.position.y-4, newTextie.transform.position.z);*/
+
+                completeTrigger = true;
+            }
             levelIncrement++;
-            isCamDone = false;
-            recentCamera = true;
-            went = 0;
-            StartCoroutine(cam.GetComponent<camControl>().CamLerp());
+            if (Input.GetKeyDown(KeyCode.Space)){
+                StartCoroutine(cam.GetComponent<camControl>().CamLerp());
+                went = 0;
+                isCamDone = false;
+                recentCamera = true;
+                src.PlayOneShot(ding);
+
+                triggerType = "";
+            }
+            
         }
         if(isCamDone && recentCamera)
         {
@@ -87,9 +133,11 @@ public class gameManager : MonoBehaviour
             for (int i = 0; i < oldArray.Length; i++)
             {
                 print(oldArray.Length);
-                GameObject newRope = Instantiate(prefabArray[i], new Vector3(/*oldArray[i].transform.Find("Hook").transform.position.x*/rArray[i].transform.position.x, cam.transform.position.y, 0), Quaternion.identity);
+                GameObject newRope = Instantiate(prefabArray[i], new Vector3(oldArray[i].transform.Find("Hook").transform.position.x/*rArray[i].transform.position.x*/, cam.transform.position.y, 0), Quaternion.identity);
                 oldArray[i] = newRope;
+                newRope.transform.position = new Vector3(rArray[i].transform.position.x, newRope.transform.position.y, newRope.transform.position.z);
             }
+
             greenB.GetComponent<Follow>().rope = oldArray[0].transform.Find("Hook").gameObject;
             blueB.GetComponent<Follow>().rope = oldArray[1].transform.Find("Hook").gameObject;
             redB.GetComponent<Follow>().rope = oldArray[2].transform.Find("Hook").gameObject;
@@ -101,25 +149,12 @@ public class gameManager : MonoBehaviour
             greenB.transform.position = new Vector3(greenB.transform.position.x, greenB.transform.position.y, -260);
             blueB.transform.position = oldArray[1].transform.Find("Hook").gameObject.transform.position;
             blueB.transform.position = new Vector3(blueB.transform.position.x, blueB.transform.position.y, -260);
-            newTextie.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y-10, newTextie.transform.position.z);
-            storyImg.SetActive(true);
-            storyImg.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, newTextie.transform.position.z);
-            switch (triggerType)
-            {
-                case "br":
-                    newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = "- The child elf, Eira, is crying over the bodies of her parents that are buried under the rubble of their burned house- The father is dead while the mother is stuck halfway- The dwarf Samra hears Eira and sees an orc about to kill her";
-                    storyImg.GetComponent<Image>().sprite = brImg;
-                    break;
-                case "bg":
-                    newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = "- The child elf, Eira, is crying- The dwarf Samra hears her-Samra rushes over as Kolrick hesitantly raises his weapon on Eira-Samra pushes Eira aside just in time and comes in the way of the attack and blocks it with her metal arm";
-                    storyImg.GetComponent<Image>().sprite = bgImg;
-                    break;
-                case "gr":
-                    storyImg.GetComponent<Image>().sprite = grImg;
-                    newTextie.GetComponent<TMPro.TextMeshProUGUI>().text = "- Kolrick continues killing the adult elves in a blinded rage- Before he knew it, he came face to face with a crying child elf(Eira)-He doesn't know what to do as his duty clashes with his morals";
-                    break;
-            }
-            triggerType = "";
+            /*            newTextie.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y-10, newTextie.transform.position.z);
+            */            /*storyImg.SetActive(true);
+                        storyImg.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, newTextie.transform.position.z);*/
+            containStory.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, containStory.transform.position.z);
+
+            completeTrigger = false;
         }
     }
     public void ConnectLink(GameObject connector, GameObject connectee)

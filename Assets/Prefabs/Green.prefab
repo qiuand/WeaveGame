@@ -31,6 +31,14 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5681482650697105397, guid: 70d9d6788ca8417439fda32a1c344a75, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681482650697105397, guid: 70d9d6788ca8417439fda32a1c344a75, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.13399053
+      objectReference: {fileID: 0}
     - target: {fileID: 6364363580653836040, guid: 70d9d6788ca8417439fda32a1c344a75, type: 3}
       propertyPath: m_IsTrigger
       value: 1

@@ -41,7 +41,7 @@ public class DialogueViewer : MonoBehaviour
         }
     }
 
-    private void OnNodeSelected(int indexChosen)
+    public void OnNodeSelected(int indexChosen)
     {
         Debug.Log("Chose: " + indexChosen);
         controller.ChooseResponse(indexChosen);
