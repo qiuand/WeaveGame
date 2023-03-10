@@ -102,6 +102,18 @@ Samra howls as she infuses her metal arm with earthen magics and drives her jagg
 :: br orc route
 [[gr orc route]]
 
+:: gr orc route 
+Kolrik hesitated, the sight of the child momentarily staying his hand. He had never killed a child before, and the innocence in the elf's eyes made him pause. In that moment of hesitation, a dwarf woman named Samra appeared out of nowhere, launching a fierce attack on Kilrok.
+
+Kolrik was caught off guard and stumbled backward, but he quickly regained his footing and turned to face his attacker. Samra was smaller than him, but she was quick and nimble. She darted around him, striking him with her axe at every opportunity.
+
+Kolrik was a seasoned warrior, and he knew he could not let his guard down. He swung his axe with ferocity, but Samra dodged and weaved, always managing to stay just out of reach.
+
+The elf child, meanwhile, had found her feet and was running away as fast as she could. Kilrok couldn't help but feel a twinge of guilt as he watched her go.
+
+[[br orc end]]
+[[bg orc route a]]
+[[gr dwarf route 2]]
 :: bg orc route
 In the midst of his confusion, he had a sudden flashback to his childhood. He remembered the day when a group of elves had attacked his village, slaughtering everyone in sight. He had watched as his family and friends were cut down, and he had felt a seething anger and desire for revenge that had stayed with him ever since.
 
@@ -117,18 +129,6 @@ Grok sneered at Kolrik. "Don't worry, I'll take care of the child for you," he s
 [[bg orc route b]]
 [[gr orc route b]]
 
-:: gr orc route
-Kolrik hesitated, the sight of the child momentarily staying his hand. He had never killed a child before, and the innocence in the elf's eyes made him pause. In that moment of hesitation, a dwarf woman named Samra appeared out of nowhere, launching a fierce attack on Kilrok.
-
-Kolrik was caught off guard and stumbled backward, but he quickly regained his footing and turned to face his attacker. Samra was smaller than him, but she was quick and nimble. She darted around him, striking him with her axe at every opportunity.
-
-Kolrik was a seasoned warrior, and he knew he could not let his guard down. He swung his axe with ferocity, but Samra dodged and weaved, always managing to stay just out of reach.
-
-The elf child, meanwhile, had found her feet and was running away as fast as she could. Kilrok couldn't help but feel a twinge of guilt as he watched her go.
-
-[[br orc end]]
-[[bg orc route a]]
-[[gr dwarf route 2]]
 
 
 :: br dwarf route [END]
