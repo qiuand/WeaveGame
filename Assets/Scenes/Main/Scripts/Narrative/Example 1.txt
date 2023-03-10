@@ -31,38 +31,38 @@ sample3
 [[1h]]
 [[1i]]
 
-:: 1a 
+:: 1a [End]
 dialogue
 [[x]]
 
-:: 1b 
+:: 1b [End]
 dialogue
 [[x]]
 
-:: 1c 
+:: 1c [End]
 dialogue
 [[x]]
 
-:: 1d 
+:: 1d [End]
 dialogue
 [[x]]
 
-:: 1e 
+:: 1e [End]
 dialogue
 [[x]]
 
-:: 1f
+:: 1f [End]
 dialogue
 [[x]]
 
-:: 1g 
+:: 1g [End]
 dialogue
 [[x]]
 
-:: 1h 
+:: 1h [End]
 dialogue
 [[x]]
 
-:: 1i 
+:: 1i [End]
 dialogue
 [[x]]

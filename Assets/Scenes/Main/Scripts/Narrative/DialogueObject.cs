@@ -85,10 +85,10 @@ public class DialogueObject {
                     int posEnd = currLineText.IndexOf("}", posBegin);
                     currLineText = currLineText.Substring( 0, posBegin ) + currLineText.Substring( posEnd + 1 );
                 }
- 
+
                 bool tagsPresent = currLineText.IndexOf( "[" ) < currLineText.IndexOf( "\r\n" );
                 int endOfFirstLine = currLineText.IndexOf( "\r\n" );
- 
+                
                 int startOfResponses = -1;
                 int startOfResponseDestinations = currLineText.IndexOf( "[[" );
                 bool lastNode = (startOfResponseDestinations == -1);
@@ -115,7 +115,9 @@ public class DialogueObject {
  
                 if ( !string.IsNullOrEmpty( tags ) && tags[ tags.Length - 1 ] == ']' )
                     tags = tags.Substring( 0, tags.Length - 1 );
- 
+
+                Debug.Log("Tags: " + tags);
+
                 // Extract Message Text & Responses
                 string messsageText = currLineText.Substring( endOfFirstLine, startOfResponses - endOfFirstLine).Trim();
                 string responseText = currLineText.Substring( startOfResponses ).Trim();
@@ -130,7 +132,11 @@ public class DialogueObject {
                     UnityEngine.Assertions.Assert.IsTrue( null == titleOfStartNode );
                     titleOfStartNode = curNode.title;
                 }
- 
+                if ( curNode.tags.Contains( kEnd ) )
+                {
+                    // Do something
+                    
+                }
                 // Note: response messages are optional (if no message then destination is the message)
                 // With Message Format: "\r\n Message[[Response One]]"
                 // Message-less Format: "\r\n [[Response One]]"
